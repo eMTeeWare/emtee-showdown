@@ -1,0 +1,61 @@
+.season {
+    border: 1px dotted black;
+    width: 350px;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    vertical-align: top;
+}
+.selected {
+    background-color: lightgreen;
+}
+
+.scene {
+    border-radius: 10px;
+    width: 350px;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+    height: 150px;
+    perspective: 600px;
+}
+
+.card {
+    border: 1px dotted black;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.card__face {
+    padding: 5px;
+    border-radius: 10px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.card__face--front {
+    position: absolute;
+    background: blue;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    line-height: 150px;
+}
+
+.card__face--back {
+    background: lightcoral;
+    transform: rotateY(180deg );
+}
+
+.card.is-flipped {
+    transform: rotateY(180deg);
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>eMTee Selection</title>
+    <link rel="stylesheet" href="css.css">
+    <script type="application/javascript" src="javascript.js"></script>
+</head>
+<body>
+
+{#each seasons}
+<div class="scene">
+    <div id="{it.id}" class="card" onclick="flip(id)">
+        <div class="card__face card__face--front">{count}</div>
+<div class="card__face card__face--back">
+    <b>{it.show}</b>
+    (Staffel {it.number} von {it.totalSeasons})<br><br>Erstausstrahlung: {it.yearOfFirstAiring}<br> {it.numberOfEpisodes} Episoden<br> letzte Episode gesehen am: {it.lastSeen}
+</div>
+</div>
+</div>
+{/each}
+
+
+</body>
+</html>

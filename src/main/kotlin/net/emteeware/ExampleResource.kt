@@ -47,7 +47,7 @@ class SelectionResource {
     @GET
     @Produces(TEXT_HTML)
     fun getSelectedSeasons() : TemplateInstance {
-        return selection.data("seasons", seasonChoice.seasonList.filter { selectedShows.selectedSeasons.contains(it.id) })
+        return selection.data("seasons", seasonChoice.seasonList.filter { selectedShows.selectedSeasons.contains(it.id) }.shuffled())
     }
 }
 

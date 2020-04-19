@@ -9,4 +9,8 @@ class Selection {
     fun addSeason(id : String) {
         selectedSeasons.add(id)
     }
+
+    fun removeSeason(id: String) {
+        selectedSeasons.remove(id)
+    }
 }

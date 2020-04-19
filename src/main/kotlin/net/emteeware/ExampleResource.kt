@@ -5,6 +5,7 @@ import io.quarkus.qute.TemplateInstance
 import java.util.Collections
 import javax.inject.Inject
 import javax.ws.rs.Consumes
+import javax.ws.rs.DELETE
 import javax.ws.rs.GET
 import javax.ws.rs.POST
 import javax.ws.rs.PUT
@@ -41,6 +42,13 @@ class SelectionResource {
     @Consumes(APPLICATION_FORM_URLENCODED)
     fun select(id: String): Response {
         selectedShows.addSeason(id.substring(3))
+        return Response.accepted().build()
+    }
+
+    @DELETE
+    @Consumes(APPLICATION_FORM_URLENCODED)
+    fun deselect(id: String): Response {
+        selectedShows.removeSeason(id.substring(3))
         return Response.accepted().build()
     }
 

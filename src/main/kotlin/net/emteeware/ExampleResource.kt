@@ -6,6 +6,7 @@ import java.util.Collections
 import javax.inject.Inject
 import javax.ws.rs.Consumes
 import javax.ws.rs.DELETE
+import javax.ws.rs.FormParam
 import javax.ws.rs.GET
 import javax.ws.rs.POST
 import javax.ws.rs.PUT
@@ -40,8 +41,8 @@ class SelectionResource {
 
     @POST
     @Consumes(APPLICATION_FORM_URLENCODED)
-    fun select(id: String): Response {
-        selectedShows.addSeason(id.substring(3))
+    fun select(@FormParam("id") id: String): Response {
+        selectedShows.addSeason(id)
         return Response.accepted().build()
     }
 

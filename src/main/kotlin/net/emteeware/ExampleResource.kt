@@ -2,6 +2,7 @@ package net.emteeware
 
 import io.quarkus.qute.Template
 import io.quarkus.qute.TemplateInstance
+import org.slf4j.LoggerFactory
 import java.util.Collections
 import javax.inject.Inject
 import javax.ws.rs.Consumes
@@ -30,6 +31,8 @@ class ExampleResource {
 
 @Path("/selection")
 class SelectionResource {
+    private val logger = LoggerFactory.getLogger(javaClass)
+
     @Inject
     lateinit var selectedShows: Selection
 
@@ -42,6 +45,7 @@ class SelectionResource {
     @POST
     @Consumes(APPLICATION_FORM_URLENCODED)
     fun select(@FormParam("id") id: String): Response {
+        logger.info("Adding season $id")
         selectedShows.addSeason(id)
         return Response.accepted().build()
     }

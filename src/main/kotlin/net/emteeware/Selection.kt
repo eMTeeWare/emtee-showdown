@@ -18,4 +18,8 @@ class Selection {
         selectedSeasons.remove(id)
         logger.info("Removed season $id")
     }
+
+    fun clear() {
+        selectedSeasons.clear()
+    }
 }

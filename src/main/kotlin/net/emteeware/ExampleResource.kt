@@ -44,8 +44,13 @@ class SelectionResource {
 
     @DELETE
     @Consumes(APPLICATION_FORM_URLENCODED)
-    fun deselect(id: String): Response {
-        selectedShows.removeSeason(id.substring(3))
+    fun deselect(@FormParam("id") id: String): Response {
+        logger.info("Deleting season $id")
+        if (id == "*") {
+            selectedShows.clear()
+        } else {
+            selectedShows.removeSeason(id)
+        }
         return Response.accepted().build()
     }
 

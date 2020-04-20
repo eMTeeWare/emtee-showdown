@@ -62,8 +62,11 @@ class SelectionResource {
 
     @GET
     @Produces(TEXT_HTML)
-    fun getSelectedSeasons() : TemplateInstance {
-        return selection.data("seasons", seasonChoice.seasonList.filter { selectedShows.selectedSeasons.contains(it.id) }.shuffled())
+    fun getSelectedSeasons(): TemplateInstance {
+        return selection.data(
+            "seasons",
+            seasonChoice.seasonList.filter { selectedShows.selectedSeasons.contains(it.id) }.shuffled()
+        )
     }
 }
 
@@ -87,7 +90,7 @@ class SeasonResource {
     @GET
     @Path("/{id}")
     @Produces(TEXT_HTML)
-    fun getSingleSeason(@PathParam("id") id: String) : TemplateInstance {
+    fun getSingleSeason(@PathParam("id") id: String): TemplateInstance {
         return seasons.data("seasons", Collections.singletonList(seasonChoice.getSeasonById(id)))
     }
 

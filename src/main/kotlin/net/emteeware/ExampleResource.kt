@@ -44,8 +44,11 @@ class SelectionResource {
 
     @POST
     @Consumes(APPLICATION_FORM_URLENCODED)
-    fun select(@FormParam("id") id: String): Response {
-        logger.info("Adding season $id")
+    fun select(
+        @FormParam("id") id: String,
+        @FormParam("user") user: String
+    ): Response {
+        logger.info("Adding season $id for $user")
         selectedShows.addSeason(id)
         return Response.accepted().build()
     }

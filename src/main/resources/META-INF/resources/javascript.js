@@ -4,7 +4,7 @@ function alarm(id) {
 
 function select(id) {
     var theElement = document.getElementById(id);
-    var data = "id=" + theElement.id;
+    var data = "id=" + theElement.id + "&user=" + document.getElementById("userName").value;
     var xhr = new XMLHttpRequest();
     xhr.withCredentials = true;
 

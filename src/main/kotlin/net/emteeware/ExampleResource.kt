@@ -4,6 +4,8 @@ import io.quarkus.qute.Template
 import io.quarkus.qute.TemplateInstance
 import org.slf4j.LoggerFactory
 import java.util.Collections
+import java.util.stream.Collector
+import java.util.stream.Collectors
 import javax.inject.Inject
 import javax.ws.rs.Consumes
 import javax.ws.rs.DELETE
@@ -38,18 +40,18 @@ class SelectionResource {
         @FormParam("user") user: String
     ): Response {
         logger.info("Adding season $id for $user")
-        selectedShows.addSeason(id)
+        selectedShows.addSeason(id, user)
         return Response.accepted().build()
     }
 
     @DELETE
     @Consumes(APPLICATION_FORM_URLENCODED)
-    fun deselect(@FormParam("id") id: String): Response {
-        logger.info("Deleting season $id")
+    fun deselect(@FormParam("id") id: String, @FormParam("user") user: String): Response {
+        logger.info("Deleting season $id for $user")
         if (id == "*") {
             selectedShows.clear()
         } else {
-            selectedShows.removeSeason(id)
+            selectedShows.removeSeason(id, user)
         }
         return Response.accepted().build()
     }
@@ -59,7 +61,7 @@ class SelectionResource {
     fun getSelectedSeasons(): TemplateInstance {
         return selection.data(
             "seasons",
-            seasonChoice.seasonList.filter { selectedShows.selectedSeasons.contains(it.id) }.shuffled()
+            seasonChoice.seasonList.filter { selectedShows.selectedSeasons.flatMap { p -> p.value }.contains(it.id) }.shuffled()
         )
     }
 }

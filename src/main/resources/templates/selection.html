@@ -10,7 +10,7 @@
 
 {#each seasons}
 <div class="scene">
-    <div id="{it.id}" class="card" onclick="flip(id)">
+    <div id="{it.id}{count}" class="card" onclick="flip(id)">
         <div class="card__face card__face--front">{count}</div>
 <div class="card__face card__face--back">
     <b>{it.show}</b>

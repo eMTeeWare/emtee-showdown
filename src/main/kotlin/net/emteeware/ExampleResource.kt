@@ -59,9 +59,14 @@ class SelectionResource {
     @GET
     @Produces(TEXT_HTML)
     fun getSelectedSeasons(): TemplateInstance {
+        val theSelection = arrayListOf<Season>()
+        selectedShows.selectedSeasons.flatMap { p -> p.value }.forEach{
+            seasonChoice.getSeasonById(it)?.let { it1 -> theSelection.add(it1) }
+        }
         return selection.data(
             "seasons",
-            seasonChoice.seasonList.filter { selectedShows.selectedSeasons.flatMap { p -> p.value }.contains(it.id) }.shuffled()
+            theSelection
+            // seasonChoice.seasonList.filter { selectedShows.selectedSeasons.flatMap { p -> p.value }.contains(it.id) }.shuffled()
         )
     }
 }

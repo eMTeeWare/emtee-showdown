@@ -60,8 +60,8 @@ class SelectionResource {
     @Produces(TEXT_HTML)
     fun getSelectedSeasons(): TemplateInstance {
         val theSelection = arrayListOf<Season>()
-        selectedShows.selectedSeasons.flatMap { p -> p.value }.forEach{
-            seasonChoice.getSeasonById(it)?.let { it1 -> theSelection.add(it1) }
+        selectedShows.selectedSeasons.flatMap { p -> p.value }.forEach {
+            seasonChoice.getSeasonById(it)?.let { season -> theSelection.add(season) }
         }
         return selection.data(
             "seasons",

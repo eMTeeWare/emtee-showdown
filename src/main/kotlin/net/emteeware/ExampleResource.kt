@@ -66,7 +66,6 @@ class SelectionResource {
         return selection.data(
             "seasons",
             theSelection
-            // seasonChoice.seasonList.filter { selectedShows.selectedSeasons.flatMap { p -> p.value }.contains(it.id) }.shuffled()
         )
     }
 }

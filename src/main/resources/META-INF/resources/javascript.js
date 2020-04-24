@@ -1,10 +1,12 @@
+let user = Math.random().toString(36).substr(2, 5);
+
 function alarm(id) {
     alert('Alarm! von ' + id);
 }
 
 function select(id) {
     var theElement = document.getElementById(id);
-    var data = "id=" + theElement.id + "&user=" + document.getElementById("userName").value;
+    var data = "id=" + theElement.id + "&user=" + user;
     var xhr = new XMLHttpRequest();
     xhr.withCredentials = true;
 

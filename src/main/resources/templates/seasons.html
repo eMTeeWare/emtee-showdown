@@ -8,10 +8,6 @@
 </head>
 <body>
 
-<div>
-    <label>Name: <input type="text" placeholder="Bitte Namen eingeben ..." id="userName"></label>
-</div>
-
 {#each seasons}
 <div id="{it.id}" class="season {#if it.selected}selected{/if}" onclick="select(this.id)">
     <b>{it.show}</b>

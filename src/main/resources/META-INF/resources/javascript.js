@@ -19,14 +19,14 @@ function select(id) {
 
         theElement.classList.remove("selected");
 
-        xhr.open("DELETE", "http://localhost:8080/selection");
+        xhr.open("DELETE", "/selection");
         xhr.setRequestHeader("content-type", "application/x-www-form-urlencoded");
 
         xhr.send(data);
     } else {
         theElement.classList.add("selected");
 
-        xhr.open("POST", "http://localhost:8080/selection");
+        xhr.open("POST", "/selection");
         xhr.setRequestHeader("content-type", "application/x-www-form-urlencoded");
 
         xhr.send(data);

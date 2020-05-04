@@ -63,7 +63,7 @@ class SelectionResource {
         }
         return selection.data(
             "seasons",
-            theSelection
+            theSelection.shuffled()
         )
     }
 }

@@ -6,7 +6,7 @@ import javax.inject.Singleton
 
 @Singleton
 class SeasonChoice {
-    final val legacySeasonList: ArrayList<LegacySeason> = ArrayList()
+    val legacySeasonList: ArrayList<LegacySeason> = ArrayList()
 
     init {
         legacySeasonList.add(LegacySeason("How to Get Away with Murder", 3, 6, Year.of(2016), 22, LocalDate.parse("2020-03-08"), "100"))

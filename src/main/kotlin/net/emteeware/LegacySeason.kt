@@ -3,7 +3,7 @@ package net.emteeware
 import java.time.LocalDate
 import java.time.Year
 
-data class Season(
+data class LegacySeason(
     val show: String,
     val number: Int,
     val totalSeasons: Int,

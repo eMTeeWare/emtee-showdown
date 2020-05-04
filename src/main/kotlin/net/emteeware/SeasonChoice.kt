@@ -2,10 +2,6 @@ package net.emteeware
 
 import java.time.LocalDate
 import java.time.Year
-import java.util.Optional
-import java.util.UUID
-import java.util.function.Predicate
-import javax.enterprise.context.ApplicationScoped
 import javax.inject.Singleton
 
 @Singleton

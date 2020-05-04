@@ -23,6 +23,8 @@ class TraktListEntry {
         var year: Int = 0
     }
 
+    // Property names are defined by output of Trakt rest API
+    @Suppress("PropertyName")
     class Season {
         var number: Int = 0
         var episode_count: Int = 0

@@ -1,9 +1,5 @@
 let user = Math.random().toString(36).substr(2, 5);
 
-function alarm(id) {
-    alert('Alarm! von ' + id);
-}
-
 function select(id) {
     const theElement = document.getElementById(id);
     const data = "id=" + theElement.id + "&user=" + user;

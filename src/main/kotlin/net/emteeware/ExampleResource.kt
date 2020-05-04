@@ -4,8 +4,6 @@ import io.quarkus.qute.Template
 import io.quarkus.qute.TemplateInstance
 import org.slf4j.LoggerFactory
 import java.util.Collections
-import java.util.stream.Collector
-import java.util.stream.Collectors
 import javax.inject.Inject
 import javax.ws.rs.Consumes
 import javax.ws.rs.DELETE

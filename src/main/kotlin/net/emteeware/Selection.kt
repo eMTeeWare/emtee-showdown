@@ -2,7 +2,6 @@ package net.emteeware
 
 
 import org.slf4j.LoggerFactory
-import java.util.Arrays
 import javax.enterprise.context.ApplicationScoped
 
 @ApplicationScoped

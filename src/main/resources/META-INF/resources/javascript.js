@@ -5,9 +5,9 @@ function alarm(id) {
 }
 
 function select(id) {
-    var theElement = document.getElementById(id);
-    var data = "id=" + theElement.id + "&user=" + user;
-    var xhr = new XMLHttpRequest();
+    const theElement = document.getElementById(id);
+    const data = "id=" + theElement.id + "&user=" + user;
+    const xhr = new XMLHttpRequest();
     xhr.withCredentials = true;
 
     xhr.addEventListener("readystatechange", function () {

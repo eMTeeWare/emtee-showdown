@@ -8,8 +8,13 @@
     border-radius: 10px;
     vertical-align: top;
 }
+
 .selected {
     background-color: lightgreen;
+}
+
+.discarded {
+    background-color: red;
 }
 
 .scene {
@@ -37,12 +42,12 @@
     padding: 5px;
     border-radius: 10px;
     position: absolute;
-    height: 100%;
-    width: 100%;
     backface-visibility: hidden;
 }
 
 .card__face--front {
+    height: 100%;
+    width: 100%;
     position: absolute;
     background: blue;
     font-size: 50px;
@@ -52,10 +57,35 @@
 }
 
 .card__face--back {
-    background: lightcoral;
-    transform: rotateY(180deg );
+    height: 90%;
+    width: 90%;
+    transform: rotateY(180deg);
 }
 
 .card.is-flipped {
     transform: rotateY(180deg);
+}
+
+.button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 80px;
+    padding: 15px
+}
+
+.button-left {
+    float: left;
+}
+
+.button-left:hover {
+    color: green;
+}
+
+.button-right {
+    float: right;
+}
+
+.button-right:hover {
+    color: red;
 }

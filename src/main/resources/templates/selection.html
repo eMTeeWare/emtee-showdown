@@ -10,13 +10,18 @@
 
 {#each seasons}
 <div class="scene">
-    <div id="{it.id}{count}" class="card" onclick="flip(id)">
-        <div class="card__face card__face--front">{count}</div>
-<div class="card__face card__face--back">
-    <b>{it.show}</b>
-    (Staffel {it.number}<!-- von {it.totalSeasons}-->)<br><br>Erstausstrahlung: {it.yearOfFirstAiring}<br> {it.numberOfEpisodes} Episoden<br><!-- letzte Episode gesehen am: {it.lastSeen}-->
-</div>
-</div>
+    <div id="{it.id}{count}" class="card">
+        <div class="card__face card__face--front">
+            <button class="button button-left" onclick="flip(this.parentNode.parentNode.id, true)">✔</button>
+            {count}
+            <button class="button button-right" onclick="flip(this.parentNode.parentNode.id, false)">✘</button>
+        </div>
+        <div class="card__face card__face--back">
+            <b>{it.show}</b>
+            (Staffel {it.number}<!-- von {it.totalSeasons}--> )<br><br>Erstausstrahlung: {it.yearOfFirstAiring}<br> {it.numberOfEpisodes} Episoden<br>
+            <!-- letzte Episode gesehen am: {it.lastSeen}-->
+        </div>
+    </div>
 </div>
 {/each}
 

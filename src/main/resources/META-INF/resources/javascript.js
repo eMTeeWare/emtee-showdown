@@ -29,6 +29,11 @@ function select(id) {
     }
 }
 
-function flip(id) {
+function flip(id, selected) {
     document.getElementById(id).classList.toggle('is-flipped');
+    if(selected) {
+        document.getElementById(id).classList.toggle('selected');
+    } else {
+        document.getElementById(id).classList.toggle('discarded');
+    }
 }

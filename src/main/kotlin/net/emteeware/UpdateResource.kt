@@ -34,7 +34,6 @@ class UpdateResource {
     lateinit var authToken : String
 
     @GET
-    @Path("/update")
     @Produces(MediaType.APPLICATION_JSON)
     fun update(): ArrayList<TraktListEntry> {
         logger.info("update from Trakt requested")

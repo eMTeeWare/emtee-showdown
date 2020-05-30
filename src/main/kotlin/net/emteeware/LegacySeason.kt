@@ -1,8 +1,10 @@
 package net.emteeware
 
+import io.quarkus.qute.TemplateData
 import java.time.LocalDate
 import java.time.Year
 
+@TemplateData
 data class LegacySeason(
     val show: String,
     val number: Int,

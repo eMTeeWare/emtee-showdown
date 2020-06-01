@@ -1,4 +1,4 @@
-# emtee-selection-server project
+# eMTee Selection Server
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 

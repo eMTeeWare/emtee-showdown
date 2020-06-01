@@ -10,7 +10,7 @@ import javax.ws.rs.Produces
 import javax.ws.rs.QueryParam
 
 
-@Path("/users/methom/lists")
+@Path("/users/{username}/lists")
 @RegisterRestClient
 interface TraktListService {
 
@@ -22,6 +22,7 @@ interface TraktListService {
         @QueryParam("extended") extended: String,
         @HeaderParam("trakt-api-key") apiKey: String,
         @HeaderParam("Authorization") bearerToken: String,
+        @PathParam("username") userName: String,
         @PathParam("listname") listName: String
     ): ArrayList<TraktListEntry>
 }

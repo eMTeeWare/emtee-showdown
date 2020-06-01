@@ -32,12 +32,14 @@ class UpdateResource {
     lateinit var apiKey : String
     @ConfigProperty(name = "trakt.bearer-token")
     lateinit var authToken : String
+    @ConfigProperty(name = "trakt.list-name")
+    lateinit var listName : String
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     fun update(): ArrayList<TraktListEntry> {
         logger.info("update from Trakt requested")
-        val updatedSeasons = traktListService.update("full", apiKey, authToken)
+        val updatedSeasons = traktListService.update("full", apiKey, authToken, listName)
         seasonChoice.legacySeasonList.clear()
         updatedSeasons.forEach { u ->
             seasonChoice.legacySeasonList.add(

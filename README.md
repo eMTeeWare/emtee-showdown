@@ -2,6 +2,8 @@
 
 ## What is it good for?
 
+Currently, eMTee Selection Server solves one very specific problem: Help choosing the next tv show to watch.
+
 ## Will there be more?
 
 ## How do I run it?

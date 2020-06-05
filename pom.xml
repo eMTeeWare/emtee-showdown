@@ -4,7 +4,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <modelVersion>4.0.0</modelVersion>
     <groupId>net.emteeware</groupId>
-    <artifactId>emtee-selection-server</artifactId>
+    <artifactId>emtee-showdown</artifactId>
     <version>0.1-SNAPSHOT</version>
     <properties>
         <compiler-plugin.version>3.8.1</compiler-plugin.version>

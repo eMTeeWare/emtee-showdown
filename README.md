@@ -2,7 +2,7 @@
 
 ## What is it good for?
 
-Currently, eMTee Selection Server solves one very specific problem: Help choosing the next tv show to watch.
+Currently, eMTee Showdown solves one very specific problem: Help choosing the next tv show to watch.
 
 ## Will there be more?
 

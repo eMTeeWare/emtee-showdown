@@ -14,7 +14,7 @@ The `/selection` endpoint will display all selected seasons as face-down cards t
 
 Sure. If I don't lose my drive. Some ideas can be found in the [issues](https://github.com/methom/emtee-showdown/issues) or in the [release planning](https://github.com/methom/emtee-showdown/projects/1).
 
-But I am also thinking about user management, workflows, automatic selection modes and much more. If you have ideas, feel free to add them as an [issue](https://github.com/methom/emtee-showdown/issues/new).
+I am also thinking about user management, workflows, automatic selection modes and much more. If you have ideas, feel free to add them as an [issue](https://github.com/methom/emtee-showdown/issues/new).
 
 If everything goes real well, I also have some ideas to generalize this service to a universal decision-making helper by allowing to configure the use of arbitrary searches for the selections. We'll see.
 
@@ -39,7 +39,7 @@ The application is packageable using `./mvnw package`.
 It produces the executable `emtee-showdown-0.1-SNAPSHOT-runner.jar` file in `/target` directory.
 Be aware that it’s not an _über-jar_ as the dependencies are copied into the `target/lib` directory.
 
-The application is now runnable using `java -jar target/emtee-showdownr-0.1-SNAPSHOT-runner.jar`.
+The application is now runnable using `java -jar target/emtee-showdown-0.1-SNAPSHOT-runner.jar`.
 
 ### Creating a native executable
 

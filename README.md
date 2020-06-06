@@ -20,6 +20,16 @@ If everything goes real well, I also have some ideas to generalize this service 
 
 ## How do I run it?
 
+To run, eMTee showdown needs the following properties:
+* trakt.api-key from https://trakt.tv/oauth/applications/new
+* trakt.bearer-token, see https://trakt.docs.apiary.io/#reference/authentication-devices (user authentication shall be integrated into this service in the future)
+* trakt.user-name, so it knows where to look for the list
+* trakt.list-name, so it know which list to look for
+
+You can provide these values in different ways, see https://quarkus.io/guides/config. One example to start it during development would be:
+
+`mvn -Dtrakt.api-key=XXXXXXXXXXXX "-Dtrakt.bearer-token=Bearer XXXXXXXXXXXX" -Dtrakt.user-name=emteeware -Dtrakt.list-name=test-is quarkus:dev`
+
 ## Quarkus Framework
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.

@@ -12,6 +12,12 @@ The `/selection` endpoint will display all selected seasons as face-down cards t
 
 ## Will there be more?
 
+Sure. If I don't lose my drive. Some ideas can be found in the [issues](https://github.com/methom/emtee-showdown/issues) or in the [release planning](https://github.com/methom/emtee-showdown/projects/1).
+
+But I am also thinking about user management, workflows, automatic selection modes and much more. If you have ideas, feel free to add them as an [issue](https://github.com/methom/emtee-showdown/issues/new).
+
+If everything goes real well, I also have some ideas to generalize this service to a universal decision-making helper by allowing to configure the use of arbitrary searches for the selections. We'll see.
+
 ## How do I run it?
 
 ## Quarkus Framework

@@ -17,11 +17,11 @@ To do so, visiting `/update` retrieves the content of a [trakt.tv](https://www.t
 
 The retrieved seasons are then available at the `/seasons` endpoint. Everybody taking part in the choosing can select seasons to be added to the selection pool.
 
-![](/documentation/seasons%20endpoint.gif)
+![Example of using the seasons endpoint.](/documentation/seasons%20endpoint.gif)
 
 The `/selection` endpoint will display all selected seasons as face-down cards than can be dismissed or chosen.
 
-![](/documentation/selection%20endpoint.gif)
+![Example of using the selection endpoint.](/documentation/selection%20endpoint.gif)
 
 <a name="future"/>
 

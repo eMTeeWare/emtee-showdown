@@ -1,5 +1,14 @@
 # eMTee Showdown
 
+## Table of Contents
+* [What is it good for?](#purpose)
+* [Will there be more?](#future)
+* [How do I run it?](#properties)
+* [Quarkus Framework](#quarkus)
+
+
+<a name="purpose"/>
+
 ## What is it good for?
 
 Currently, eMTee Showdown solves one very specific problem: Help choose the next tv show to watch.
@@ -10,6 +19,8 @@ The retrieved seasons are then available at the `/seasons` endpoint. Everybody t
 
 The `/selection` endpoint will display all selected seasons as face-down cards than can be dismissed or chosen.
 
+<a name="future"/>
+
 ## Will there be more?
 
 Sure. If I don't lose my drive. Some ideas can be found in the [issues](https://github.com/methom/emtee-showdown/issues) or in the [release planning](https://github.com/methom/emtee-showdown/projects/1).
@@ -17,6 +28,8 @@ Sure. If I don't lose my drive. Some ideas can be found in the [issues](https://
 I am also thinking about user management, workflows, automatic selection modes and much more. If you have ideas, feel free to add them as an [issue](https://github.com/methom/emtee-showdown/issues/new).
 
 If everything goes real well, I also have some ideas to generalize this service to a universal decision-making helper by allowing to configure the use of arbitrary searches for the selections. We'll see.
+
+<a name="properties"/>
 
 ## How do I run it?
 
@@ -29,6 +42,8 @@ To run, eMTee showdown needs the following properties:
 You can provide these values in different ways, see https://quarkus.io/guides/config. One example to start it during development would be:
 
 `mvn -Dtrakt.api-key=XXXXXXXXXXXX "-Dtrakt.bearer-token=Bearer XXXXXXXXXXXX" -Dtrakt.user-name=emteeware -Dtrakt.list-name=test-is quarkus:dev`
+
+<a name="quarkus"/>
 
 ## Quarkus Framework
 

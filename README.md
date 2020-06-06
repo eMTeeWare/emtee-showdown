@@ -2,7 +2,13 @@
 
 ## What is it good for?
 
-Currently, eMTee Showdown solves one very specific problem: Help choosing the next tv show to watch.
+Currently, eMTee Showdown solves one very specific problem: Help choose the next tv show to watch.
+
+To do so, visiting `/update` retrieves the content of a [trakt.tv](https://www.trakt.tv) list containing seasons of tv shows. (There are some hardcoded sample shows so that it also works without a trakt.tv account for demonstration purposes.)
+
+The retrieved seasons are then available at the `/seasons` endpoint. Everybody taking part in the choosing can select seasons to be added to the selection pool.
+
+The `/selection` endpoint will display all selected seasons as face-down cards than can be dismissed or chosen.
 
 ## Will there be more?
 

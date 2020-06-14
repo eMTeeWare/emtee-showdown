@@ -9,7 +9,7 @@ class SeasonChoice {
     val legacySeasonList: ArrayList<LegacySeason> = ArrayList()
 
     init {
-        legacySeasonList.add(LegacySeason("How to Get Away with Murder", 3, 6, Year.of(2016), 22, LocalDate.parse("2020-03-08"), "100"))
+        legacySeasonList.add(LegacySeason("ALF", 2, 4, Year.of(1987), 26, LocalDate.parse("2020-03-08"), "100"))
         legacySeasonList.add(
             LegacySeason("Battlestar Galactica", 4, 4, Year.of(2008), 20, LocalDate.parse("2020-03-08"), "200"))
         legacySeasonList.add(LegacySeason("Captain Future", 1, 14, Year.of(1978), 52, LocalDate.parse("2020-02-18"), "300"))

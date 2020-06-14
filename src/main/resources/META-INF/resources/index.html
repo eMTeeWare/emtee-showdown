@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>emtee-selection-server - 0.1-SNAPSHOT</title>
+    <title>eMTee Showdown</title>
     <style>
         h1, h2, h3, h4, h5, h6 {
             margin-bottom: 0.5rem;
@@ -100,48 +100,32 @@
 <body>
 
 <div class="banner lead">
-    Your new Cloud-Native application is ready!
+    eMTee Showdown - Choose which show to watch next!
 </div>
 
 <div class="container">
     <div class="left-column">
-        <p class="lead"> Congratulations, you have created a new Quarkus application.</p>
+        <p class="lead">You are just a few steps away from watching a new tv show.</p>
 
-        <h2>Why do you see this?</h2>
+        <h2>Updating the available shows</h2>
+        <p>Go to the <a href="update">update page</a> to retrieve the list of shows that you configured on <a href="https://www.trakt.tv" target="_blank">Trakt TV</a>. </p>
 
-        <p>This page is served by Quarkus. The source is in
-            <code>src/main/resources/META-INF/resources/index.html</code>.</p>
+        <h2>Participating in the election</h2>
+        <p>Please go to <a href="seasons">the seasons page</a> to mark the shows, you would like to view next.</p>
 
-        <h2>What can I do from here?</h2>
-
-        <p>If not already done, run the application in <em>dev mode</em> using: <code>mvn compile quarkus:dev</code>.
+        <h2>Choosing one show</h2>
+        <p>Once all participants have selected their candidates, one person can go to <a href="selection">the selection page</a> and choose one show from all selected ones.
         </p>
-        <ul>
-            <li>Add REST resources, Servlets, functions and other services in <code>src/main/java</code>.</li>
-            <li>Your static assets are located in <code>src/main/resources/META-INF/resources</code>.</li>
-            <li>Configure your application in <code>src/main/resources/application.properties</code>.
-            </li>
-        </ul>
 
-        <h2>How do I get rid of this page?</h2>
-        <p>Just delete the <code>src/main/resources/META-INF/resources/index.html</code> file.</p>
+
     </div>
     <div class="right-column">
         <div class="right-section">
-            <h3>Application</h3>
+            <h3>Quick Links</h3>
             <ul>
-                <li>GroupId: net.emteeware</li>
-                <li>ArtifactId: emtee-selection-server</li>
-                <li>Version: 0.1-SNAPSHOT</li>
-                <li>Quarkus Version: 1.2.1.Final</li>
-            </ul>
-        </div>
-        <div class="right-section">
-            <h3>Next steps</h3>
-            <ul>
-                <li><a href="https://quarkus.io/guides/maven-tooling.html" target="_blank">Setup your IDE</a></li>
-                <li><a href="https://quarkus.io/guides/getting-started.html" target="_blank">Getting started</a></li>
-                <li><a href="https://quarkus.io" target="_blank">Quarkus Web Site</a></li>
+                <li>Update available shows: <a href="update">update</a></li>
+                <li>Take part in selection: <a href="seasons">seasons</a></li>
+                <li>Choose a show: <a href="selection">selection</a></li>
             </ul>
         </div>
     </div>

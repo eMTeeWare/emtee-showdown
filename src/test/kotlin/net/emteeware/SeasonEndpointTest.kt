@@ -14,11 +14,11 @@ class SeasonEndpointTest {
     @Test
     fun verifyPageTitle() {
         val response = given()
-            .`when`().get("/")
+            .`when`().get("/seasons")
             .then()
             .statusCode(HttpStatus.SC_OK)
             .and().contentType(ContentType.HTML).extract().response()
         val htmlPath = XmlPath(XmlPath.CompatibilityMode.HTML, response.body.asString())
-        assertEquals("eMTee Showdown", htmlPath.getString("html.head.title"))
+        assertEquals("eMTee Selection", htmlPath.getString("html.head.title"))
     }
 }

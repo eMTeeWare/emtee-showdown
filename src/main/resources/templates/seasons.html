@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <title>eMTee Selection</title>
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="css.css"/>
     <script type="application/javascript" src="javascript.js"></script>
 </head>
 <body>
@@ -11,7 +11,7 @@
 {#each seasons}
 <div id="{it.id}" class="season {#if it.selected}selected{/if}" onclick="select(this.id)">
     <b>{it.show}</b>
-    (Staffel {it.number}<!-- von {it.totalSeasons}-->)<br><br>Erstausstrahlung: {it.yearOfFirstAiring}<br> {it.numberOfEpisodes} Episoden<br><!-- letzte Episode gesehen am: {it.lastSeen}-->
+    (Staffel {it.number}<!-- von {it.totalSeasons}-->)<br/><br/>Erstausstrahlung: {it.yearOfFirstAiring}<br/> {it.numberOfEpisodes} Episoden<br/><!-- letzte Episode gesehen am: {it.lastSeen}-->
 </div>
 {/each}
 

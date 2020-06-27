@@ -21,4 +21,15 @@ class SeasonEndpointTest {
         val htmlPath = XmlPath(XmlPath.CompatibilityMode.HTML, response.body.asString())
         assertEquals("eMTee Selection", htmlPath.getString("html.head.title"))
     }
+
+    @Test
+    fun `verify properties of season with id 400`() {
+        val response = given()
+            .`when`().get("/seasons")
+            .then()
+            .statusCode(HttpStatus.SC_OK).extract().response()
+        val htmlPath = XmlPath(XmlPath.CompatibilityMode.HTML, response.body.asString())
+        assertEquals("Doctor Who", htmlPath.getString("html.body.div.p.find{ it.@id == 'title-400' }"))
+    }
+
 }

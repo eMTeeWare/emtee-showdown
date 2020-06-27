@@ -89,3 +89,11 @@
 .button-right:hover {
     color: red;
 }
+
+.title {
+    font-weight: bold;
+}
+
+p {
+    margin: 2px;
+}

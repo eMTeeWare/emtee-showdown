@@ -10,8 +10,11 @@
 
 {#each seasons}
 <div id="{it.id}" class="season {#if it.selected}selected{/if}" onclick="select(this.id)">
-    <b>{it.show}</b>
-    (Staffel {it.number}<!-- von {it.totalSeasons}-->)<br/><br/>Erstausstrahlung: {it.yearOfFirstAiring}<br/> {it.numberOfEpisodes} Episoden<br/><!-- letzte Episode gesehen am: {it.lastSeen}-->
+    <p id="title-{it.id}" class="title">{it.show}</p>
+    <p id="count-{it.id}">Staffel {it.number}<!-- von {it.totalSeasons}--></p>
+    <p id="year-{it.id}">Erstausstrahlung: {it.yearOfFirstAiring}</p>
+    <p id="episodes-{it.id}">{it.numberOfEpisodes} Episoden</p>
+    <p id="lastseeb-{it.id}"><!-- letzte Episode gesehen am: {it.lastSeen}--></p>
 </div>
 {/each}
 

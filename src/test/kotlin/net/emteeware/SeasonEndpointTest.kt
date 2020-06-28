@@ -8,7 +8,7 @@ import org.apache.http.HttpStatus
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.params.ParameterizedTest
-import org.junit.jupiter.params.provider.CsvSource
+import org.junit.jupiter.params.provider.CsvFileSource
 
 @QuarkusTest
 class SeasonEndpointTest {
@@ -25,7 +25,7 @@ class SeasonEndpointTest {
     }
 
     @ParameterizedTest
-    @CsvSource("400, Doctor Who, Staffel 6, Erstausstrahlung: 2011, 13 Episoden, ''")
+    @CsvFileSource(resources = ["/season-properties.csv"])
     fun `verify properties of seasons`(id: String, title: String, count: String, year: String, episodes: String, lastseen: String) {
         val response = given()
             .`when`().get("/seasons")

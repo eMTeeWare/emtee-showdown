@@ -14,7 +14,7 @@ import org.junit.jupiter.params.provider.CsvFileSource
 class SeasonEndpointTest {
 
     @Test
-    fun verifyPageTitle() {
+    fun `verify page title`() {
         val response = given()
             .`when`().get("/seasons")
             .then()

@@ -7,6 +7,8 @@ import io.restassured.path.xml.XmlPath
 import org.apache.http.HttpStatus
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
+import org.junit.jupiter.params.ParameterizedTest
+import org.junit.jupiter.params.provider.CsvSource
 
 @QuarkusTest
 class SeasonEndpointTest {
@@ -22,18 +24,19 @@ class SeasonEndpointTest {
         assertEquals("eMTee Selection", htmlPath.getString("html.head.title"))
     }
 
-    @Test
-    fun `verify properties of season with id 400`() {
+    @ParameterizedTest
+    @CsvSource("400, Doctor Who, Staffel 6, Erstausstrahlung: 2011, 13 Episoden, ''")
+    fun `verify properties of seasons`(id: String, title: String, count: String, year: String, episodes: String, lastseen: String) {
         val response = given()
             .`when`().get("/seasons")
             .then()
             .statusCode(HttpStatus.SC_OK).extract().response()
         val htmlPath = XmlPath(XmlPath.CompatibilityMode.HTML, response.body.asString())
-        assertEquals("Doctor Who", htmlPath.getString("html.body.div.p.find{ it.@id == 'title-400' }"))
-        assertEquals("Staffel 6", htmlPath.getString("html.body.div.p.find{ it.@id == 'count-400' }"))
-        assertEquals("Erstausstrahlung: 2011", htmlPath.getString("html.body.div.p.find{ it.@id == 'year-400' }"))
-        assertEquals("13 Episoden", htmlPath.getString("html.body.div.p.find{ it.@id == 'episodes-400' }"))
-        assertEquals("", htmlPath.getString("html.body.div.p.find{ it.@id == 'lastseen-400' }"))
+        assertEquals(title, htmlPath.getString("html.body.div.p.find{ it.@id == 'title-$id' }"))
+        assertEquals(count, htmlPath.getString("html.body.div.p.find{ it.@id == 'count-$id' }"))
+        assertEquals(year, htmlPath.getString("html.body.div.p.find{ it.@id == 'year-$id' }"))
+        assertEquals(episodes, htmlPath.getString("html.body.div.p.find{ it.@id == 'episodes-$id' }"))
+        assertEquals(lastseen, htmlPath.getString("html.body.div.p.find{ it.@id == 'lastseen-$id' }"))
     }
 
 }

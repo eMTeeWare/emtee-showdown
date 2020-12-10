@@ -65,21 +65,3 @@ class SelectionResource {
         )
     }
 }
-
-@Path("/seasons")
-class SeasonResource {
-
-    @Inject
-    lateinit var seasons: Template
-
-    @Inject
-    lateinit var seasonChoice: SeasonChoice
-
-
-    @GET
-    @Produces(TEXT_HTML)
-    fun seasons(): TemplateInstance {
-        return seasons.data("seasons", seasonChoice.legacySeasonList)
-    }
-
-}

@@ -6,7 +6,7 @@ import org.apache.http.HttpStatus
 import org.junit.jupiter.api.Test
 
 @QuarkusTest
-class ExampleResourceTest {
+class SelectionResourceTest {
 
     @Test
     fun testHelloEndpoint() {

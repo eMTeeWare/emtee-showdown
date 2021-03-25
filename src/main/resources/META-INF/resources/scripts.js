@@ -30,10 +30,10 @@ function select(id) {
 }
 
 function flip(id, selected) {
-    document.getElementById(id).classList.toggle('is-flipped');
+    document.getElementById(id).classList.add('is-flipped');
     if(selected) {
-        document.getElementById(id).classList.toggle('selected');
+        document.getElementById(id).classList.add('selected');
     } else {
-        document.getElementById(id).classList.toggle('discarded');
+        document.getElementById(id).classList.add('discarded');
     }
 }

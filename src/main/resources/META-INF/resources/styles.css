@@ -1,4 +1,6 @@
 .season {
+    color: black;
+    background-color: white;
     border: 1px dotted black;
     width: 350px;
     display: inline-block;
@@ -57,6 +59,7 @@
 }
 
 .card__face--back {
+    color: black;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -101,4 +104,9 @@
 
 p {
     margin: 2px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
 }

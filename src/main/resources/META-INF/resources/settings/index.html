@@ -5,6 +5,8 @@
     <title>eMTee Showdown</title>
     <link rel="stylesheet" href="/navbar.css" />
     <link rel="stylesheet" href="/settings/dark-mode.css" />
+    <script src="/settings/load-settings.js"></script>
+    <script src="/settings/settings.js"></script>
     <link
         rel="icon"
         type="image/png"
@@ -12,12 +14,14 @@
         href="/emtee-showdown-icon.png"
     />
 </head>
-<body>
+<body onload="load()">
 <div class="navbar-banner navbar-lead">
     eMTee Showdown - Settings
 </div>
-<div>
-    hohoho
+<div style="text-align: center">
+    <p>
+        <span>Darmode: <input id="dark-mode-input-element" onchange="changeDarkMode()" type="checkbox"/></span>
+    </p>
 </div>
 </body>
 </html>

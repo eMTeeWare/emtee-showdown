@@ -1,5 +1,12 @@
 .dark-mode {
-    /*background: #2e2c2b;*/
     background: #181818;
     color: white;
+}
+
+.dark-mode a {
+    color: #48cbdd;
+}
+
+.dark-mode a:visited {
+    color: #be8bb0;
 }

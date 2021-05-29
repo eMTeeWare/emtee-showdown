@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles.css"/>
     <link rel="stylesheet" href="/settings/dark-mode.css" />
     <script type="application/javascript" src="scripts.js"></script>
-    <script src="settings/load-settings.js"></script>
+    <script src="settings/load-settings.js" defer></script>
     <link
         rel="icon"
         type="image/png"
@@ -14,7 +14,7 @@
         href="emtee-showdown-icon.png"
     />
 </head>
-<body onload="loadSettings()">
+<body>
 
 {#each seasons}
 <div id="{it.id}" class="season {#if it.selected}selected{/if}" onclick="select(this.id)">

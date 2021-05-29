@@ -5,8 +5,8 @@
     <title>eMTee Showdown - Settings</title>
     <link rel="stylesheet" href="/navbar.css" />
     <link rel="stylesheet" href="/settings/dark-mode.css" />
-    <script src="/settings/load-settings.js"></script>
-    <script src="/settings/settings.js"></script>
+    <script src="/settings/load-settings.js" defer></script>
+    <script src="/settings/settings.js" defer></script>
     <link
         rel="icon"
         type="image/png"
@@ -14,14 +14,21 @@
         href="/emtee-showdown-icon.png"
     />
 </head>
-<body onload="load()">
+<body>
 <div class="navbar-banner navbar-lead">
     eMTee Showdown - Settings
 </div>
-<div style="text-align: center">
-    <p>
+<div style="margin: auto; padding: 10px; width: 30%">
+    <!--<p>
         <span>Darkmode: <input id="dark-mode-input-element" onchange="changeDarkMode()" type="checkbox"/></span>
-    </p>
+    </p>-->
+    <p>Darkmode:</p>
+    <input onchange="changeDarkmode()" type="radio" id="darkmodeSystem" name="darkmode" value="darkmodeSystem" />
+    <label for="darkmodeSystem">System</label><br />
+    <input onchange="changeDarkmode()" type="radio" id="darkmodeOn" name="darkmode" value="darkmodeOn" />
+    <label for="darkmodeOn">On</label><br />
+    <input onchange="changeDarkmode()" type="radio" id="darkmodeOff" name="darkmode" value="darlmodeOff" />
+    <label for="darkmodeOff">Off</label><br />
 </div>
 </body>
 </html>

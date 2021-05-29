@@ -2,6 +2,7 @@ package net.emteeware
 
 import org.eclipse.microprofile.rest.client.annotation.ClientHeaderParam
 import org.eclipse.microprofile.rest.client.inject.RegisterRestClient
+import javax.enterprise.context.ApplicationScoped
 import javax.ws.rs.GET
 import javax.ws.rs.HeaderParam
 import javax.ws.rs.Path
@@ -12,6 +13,7 @@ import javax.ws.rs.QueryParam
 
 @Path("/users/{username}/lists")
 @RegisterRestClient
+@ApplicationScoped
 interface TraktListService {
 
     @GET

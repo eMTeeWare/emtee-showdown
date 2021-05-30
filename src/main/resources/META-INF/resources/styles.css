@@ -74,6 +74,10 @@
     transform: rotateY(180deg);
 }
 
+.card.is-flipped .card__face--front {
+    display: none;
+}
+
 .button {
     background: none;
     border: none;

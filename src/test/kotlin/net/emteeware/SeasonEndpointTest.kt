@@ -21,7 +21,7 @@ class SeasonEndpointTest {
             .statusCode(HttpStatus.SC_OK)
             .and().contentType(ContentType.HTML).extract().response()
         val htmlPath = XmlPath(XmlPath.CompatibilityMode.HTML, response.body.asString())
-        assertEquals("eMTee Showdown", htmlPath.getString("html.head.title"))
+        assertEquals("eMTee Showdown - Seasons", htmlPath.getString("html.head.title"))
     }
 
     @ParameterizedTest

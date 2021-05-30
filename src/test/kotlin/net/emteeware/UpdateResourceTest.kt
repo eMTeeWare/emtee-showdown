@@ -7,20 +7,25 @@ import io.restassured.RestAssured.given
 import io.quarkiverse.test.junit.mockk.InjectMock
 import org.eclipse.microprofile.rest.client.inject.RestClient
 import org.hamcrest.Matchers.`is`
+import org.junit.jupiter.api.BeforeAll
+import org.junit.jupiter.api.TestInstance
 
 import java.time.Instant
 import java.util.*
 
 @QuarkusTest
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 internal class UpdateResourceTest {
 
     @InjectMock
     @RestClient
     lateinit var traktListService: TraktListService
 
-    @Test
-    fun update() {
-        val traktListEntry = TraktListEntry()
+    val traktListEntry = TraktListEntry()
+    val traktEntries by lazy { arrayListOf(traktListEntry) }
+
+    @BeforeAll
+    fun setup() {
         traktListEntry.id = 42
         traktListEntry.season = TraktListEntry.Season()
         traktListEntry.season.episode_count = 14
@@ -30,12 +35,16 @@ internal class UpdateResourceTest {
         traktListEntry.show = TraktListEntry.Show()
         traktListEntry.show.title = "The Testers"
         traktListEntry.show.year = 2019
-        val traktEntries = arrayListOf(traktListEntry)
+    }
+
+    @Test
+    fun update() {
+        val expectedValue =  "[{\"id\":42,\"rank\":9,\"season\":{\"episode_count\":14,\"first_aired\":\"2021-04-03T00:00:00Z[UTC]\",\"number\":3},\"show\":{\"title\":\"The Testers\",\"year\":2019}}]"
         every { traktListService.update( any(), any(), any(), any(), any() ) } returns traktEntries
         given().`when`().get("/update")
             .then()
             .statusCode(200)
-            .body(`is`("[{\"id\":42,\"rank\":9,\"season\":{\"episode_count\":14,\"first_aired\":\"2021-04-03T00:00:00Z[UTC]\",\"number\":3},\"show\":{\"title\":\"The Testers\",\"year\":2019}}]"))
+            .body(`is`(expectedValue))
 
     }
 }

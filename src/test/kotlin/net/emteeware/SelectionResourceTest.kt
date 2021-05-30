@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test
 class SelectionResourceTest {
 
     @Test
-    fun testHelloEndpoint() {
+    fun `test that hello endpoint does not exist`() {
         given()
             .`when`().get("/hello")
             .then()

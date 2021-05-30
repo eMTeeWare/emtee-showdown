@@ -41,6 +41,24 @@ class SelectionResourceTest {
         assertEquals("", htmlPath.getString("html.body"))
     }
 
+    @Test
+    fun `verify that season appears in selection when it is selected`() {
+        given()
+            .contentType("application/x-www-form-urlencoded")
+            .formParam("id", "100")
+            .formParam("user", "user1")
+            .`when`().post("/selection")
+            .then()
+            .statusCode(HttpStatus.SC_ACCEPTED)
+
+        val response= given()
+            .`when`().get("/selection")
+            .then()
+            .statusCode(HttpStatus.SC_OK)
+            .extract().response()
+        val htmlPath = XmlPath(XmlPath.CompatibilityMode.HTML, response.body.asString())
+        assertEquals("ALF", htmlPath.getString("html.body.div.div.div[1].div.b"))
+    }
 
 }
 

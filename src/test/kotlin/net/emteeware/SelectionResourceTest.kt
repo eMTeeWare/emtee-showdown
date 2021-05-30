@@ -30,6 +30,16 @@ class SelectionResourceTest {
         assertEquals("eMTee Showdown - Selection", htmlPath.getString("html.head.title"))
     }
 
+    @Test
+    fun `verify that no seasons are selected by default`() {
+        val response = given()
+            .`when`().get("/selection")
+            .then()
+            .statusCode(HttpStatus.SC_OK)
+            .extract().response()
+        val htmlPath = XmlPath(XmlPath.CompatibilityMode.HTML, response.body.asString())
+        assertEquals("", htmlPath.getString("html.body"))
+    }
 
 
 }

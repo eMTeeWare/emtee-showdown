@@ -41,7 +41,7 @@ To run, eMTee showdown needs the following properties:
 * trakt.api-key from https://trakt.tv/oauth/applications/new
 * trakt.bearer-token, see https://trakt.docs.apiary.io/#reference/authentication-devices (user authentication shall be integrated into this service in the future)
 * trakt.user-name, so it knows where to look for the list
-* trakt.list-name, so it know which list to look for
+* trakt.list-name, so it knows which list to look for
 
 You can provide these values in different ways, see https://quarkus.io/guides/config. One example to start it during development would be:
 

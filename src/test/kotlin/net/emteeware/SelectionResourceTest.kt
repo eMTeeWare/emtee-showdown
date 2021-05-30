@@ -60,5 +60,32 @@ class SelectionResourceTest {
         assertEquals("ALF", htmlPath.getString("html.body.div.div.div[1].div.b"))
     }
 
+    @Test
+    fun `verify that unselected season is removed from selection`() {
+        given()
+            .contentType("application/x-www-form-urlencoded")
+            .formParam("id", "100")
+            .formParam("user", "user1")
+            .`when`().post("/selection")
+            .then()
+            .statusCode(HttpStatus.SC_ACCEPTED)
+
+        given()
+            .contentType("application/x-www-form-urlencoded")
+            .formParam("id", "100")
+            .formParam("user", "user1")
+            .`when`().delete("/selection")
+            .then()
+            .statusCode(HttpStatus.SC_ACCEPTED)
+
+        val response = given()
+            .`when`().get("/selection")
+            .then()
+            .statusCode(HttpStatus.SC_OK)
+            .extract().response()
+        val htmlPath = XmlPath(XmlPath.CompatibilityMode.HTML, response.body.asString())
+        assertEquals("", htmlPath.getString("html.body"))
+    }
+
 }
 

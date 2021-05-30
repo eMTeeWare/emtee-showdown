@@ -19,7 +19,7 @@ class IndexPageTest {
             .statusCode(HttpStatus.SC_OK)
             .and().contentType(ContentType.HTML).extract().response()
         val htmlPath = XmlPath(XmlPath.CompatibilityMode.HTML, response.body.asString())
-        assertEquals("eMTee Showdown", htmlPath.getString("html.head.title"))
+        assertEquals("eMTee Showdown - Home", htmlPath.getString("html.head.title"))
         assertEquals("You are just a few steps away from watching a new tv show.", htmlPath.getString("html.body.div.div.p.find {it.@class == 'lead'}"))
         assertEquals(listOf("seasons", "https://www.trakt.tv", "update", "selection").sorted(), htmlPath.getList<String>("html.body.div.div.p.a.@href").toMutableList().sorted())
     }

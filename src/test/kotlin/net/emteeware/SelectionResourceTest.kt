@@ -50,6 +50,16 @@ class SelectionResourceTest {
         assertEquals("", htmlPath.getString("html.body"))
     }
 
+    @Test
+    fun `verify that a season appears twice on the selection page if two users select it`() {
+        postSeason("100", "user1")
+        postSeason("100", "user2")
+        val response = getSeasons()
+        val htmlPath = XmlPath(XmlPath.CompatibilityMode.HTML, response.body.asString())
+        assertEquals("ALF", htmlPath.getString("html.body.div[0].div.div[1].div.b"))
+        assertEquals("ALF", htmlPath.getString("html.body.div[1].div.div[1].div.b"))
+    }
+
     private fun deleteSeason(seasonId: String, userId: String) {
         given()
             .contentType("application/x-www-form-urlencoded")

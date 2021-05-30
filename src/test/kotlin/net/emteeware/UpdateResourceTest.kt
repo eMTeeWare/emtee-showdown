@@ -6,12 +6,14 @@ import org.junit.jupiter.api.Test
 import io.restassured.RestAssured.given
 import io.quarkiverse.test.junit.mockk.InjectMock
 import org.eclipse.microprofile.rest.client.inject.RestClient
+import org.junit.jupiter.api.AfterAll
 import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.TestInstance
 import org.skyscreamer.jsonassert.JSONAssert
 
 import java.time.Instant
 import java.util.*
+import javax.inject.Inject
 
 @QuarkusTest
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
@@ -20,6 +22,9 @@ internal class UpdateResourceTest {
     @InjectMock
     @RestClient
     lateinit var traktListService: TraktListService
+
+    @Inject
+    lateinit var seasonChoice: SeasonChoice
 
     val traktListEntry = TraktListEntry()
     val traktEntries by lazy { arrayListOf(traktListEntry) }
@@ -60,5 +65,10 @@ internal class UpdateResourceTest {
         response.then().assertThat().statusCode(200)
         JSONAssert.assertEquals(expectedJson, response.body.asString(), false)
 
+    }
+
+    @AfterAll
+    fun resetSeasons() {
+        seasonChoice.reset()
     }
 }

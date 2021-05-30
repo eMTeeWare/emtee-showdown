@@ -3,8 +3,8 @@ package net.emteeware
 import io.quarkus.test.junit.QuarkusTest
 import io.restassured.RestAssured.given
 import io.restassured.path.xml.XmlPath
+import io.restassured.response.Response
 import org.apache.http.HttpStatus
-import org.hamcrest.Matchers.`is`
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
@@ -21,70 +21,61 @@ class SelectionResourceTest {
 
     @Test
     fun `verify page title`() {
-        val response = given()
-            .`when`().get("/selection")
-            .then()
-            .statusCode(HttpStatus.SC_OK)
-            .extract().response()
+        val response = getSeasons()
         val htmlPath = XmlPath(XmlPath.CompatibilityMode.HTML, response.body.asString())
         assertEquals("eMTee Showdown - Selection", htmlPath.getString("html.head.title"))
     }
 
     @Test
     fun `verify that no seasons are selected by default`() {
-        val response = given()
-            .`when`().get("/selection")
-            .then()
-            .statusCode(HttpStatus.SC_OK)
-            .extract().response()
+        val response = getSeasons()
         val htmlPath = XmlPath(XmlPath.CompatibilityMode.HTML, response.body.asString())
         assertEquals("", htmlPath.getString("html.body"))
     }
 
     @Test
     fun `verify that season appears in selection when it is selected`() {
-        given()
-            .contentType("application/x-www-form-urlencoded")
-            .formParam("id", "100")
-            .formParam("user", "user1")
-            .`when`().post("/selection")
-            .then()
-            .statusCode(HttpStatus.SC_ACCEPTED)
-
-        val response= given()
-            .`when`().get("/selection")
-            .then()
-            .statusCode(HttpStatus.SC_OK)
-            .extract().response()
+        postSeason("100", "user1")
+        val response = getSeasons()
         val htmlPath = XmlPath(XmlPath.CompatibilityMode.HTML, response.body.asString())
         assertEquals("ALF", htmlPath.getString("html.body.div.div.div[1].div.b"))
     }
 
     @Test
     fun `verify that unselected season is removed from selection`() {
-        given()
-            .contentType("application/x-www-form-urlencoded")
-            .formParam("id", "100")
-            .formParam("user", "user1")
-            .`when`().post("/selection")
-            .then()
-            .statusCode(HttpStatus.SC_ACCEPTED)
+        postSeason("100", "user1")
+        deleteSeason("100", "user1")
+        val response = getSeasons()
+        val htmlPath = XmlPath(XmlPath.CompatibilityMode.HTML, response.body.asString())
+        assertEquals("", htmlPath.getString("html.body"))
+    }
 
+    private fun deleteSeason(seasonId: String, userId: String) {
         given()
             .contentType("application/x-www-form-urlencoded")
-            .formParam("id", "100")
-            .formParam("user", "user1")
+            .formParam("id", seasonId)
+            .formParam("user", userId)
             .`when`().delete("/selection")
             .then()
             .statusCode(HttpStatus.SC_ACCEPTED)
+    }
 
-        val response = given()
+    private fun getSeasons(): Response {
+        return given()
             .`when`().get("/selection")
             .then()
             .statusCode(HttpStatus.SC_OK)
             .extract().response()
-        val htmlPath = XmlPath(XmlPath.CompatibilityMode.HTML, response.body.asString())
-        assertEquals("", htmlPath.getString("html.body"))
+    }
+
+    private fun postSeason(seasonId: String, userId: String) {
+        given()
+            .contentType("application/x-www-form-urlencoded")
+            .formParam("id", seasonId)
+            .formParam("user", userId)
+            .`when`().post("/selection")
+            .then()
+            .statusCode(HttpStatus.SC_ACCEPTED)
     }
 
 }

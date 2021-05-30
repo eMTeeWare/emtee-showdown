@@ -12,14 +12,6 @@ import org.junit.jupiter.api.Test
 class SelectionResourceTest {
 
     @Test
-    fun `test that hello endpoint does not exist`() {
-        given()
-            .`when`().get("/hello")
-            .then()
-            .statusCode(HttpStatus.SC_NOT_FOUND)
-    }
-
-    @Test
     fun `verify page title`() {
         val response = getSeasons()
         val htmlPath = XmlPath(XmlPath.CompatibilityMode.HTML, response.body.asString())

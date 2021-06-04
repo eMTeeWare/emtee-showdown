@@ -6,10 +6,20 @@ import io.restassured.path.xml.XmlPath
 import io.restassured.response.Response
 import org.apache.http.HttpStatus
 import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
+import javax.inject.Inject
 
 @QuarkusTest
 class SelectionResourceTest {
+
+    @Inject
+    lateinit var selectedSeasons: Selection
+
+    @BeforeEach
+    fun cleanSeasons() {
+        selectedSeasons.clear()
+    }
 
     @Test
     fun `verify page title`() {

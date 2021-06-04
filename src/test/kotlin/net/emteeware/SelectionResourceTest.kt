@@ -47,6 +47,18 @@ class SelectionResourceTest {
         assertEquals("ALF", html.getString("html.body.div[1].div.div[1].div.b"))
     }
 
+    @Test
+    fun `verify that clear removes all selected seasons`() {
+        postSeason("100", "user1")
+        postSeason("200", "user2")
+        postSeason("200", "user1")
+        var html = getHtml()
+        assertEquals(3, html.getNodeChildren("html.body.div").size())
+        deleteSeason("*", "user3")
+        html = getHtml()
+        assertEquals("", html.getString("html.body"))
+    }
+
     private fun getHtml(): XmlPath {
         val response = getSeasons()
         val htmlPath = XmlPath(XmlPath.CompatibilityMode.HTML, response.body.asString())

@@ -16,16 +16,6 @@ class SeasonChoice {
         return legacySeasonList.find { it.id == id }
     }
 
-    fun toggleSeasonSelectedById(id: String): Boolean {
-        return if(legacySeasonList.stream().filter { t -> t.id == id }.findFirst().isPresent) {
-            legacySeasonList.stream().filter { t -> t.id == id }.findFirst().get().selected = !(legacySeasonList.stream().filter { t -> t.id == id }.findFirst().get().selected)
-            true
-        } else {
-            false
-        }
-
-    }
-
     fun reset() {
         legacySeasonList.clear()
         legacySeasonList.add(LegacySeason("ALF", 2, 4, Year.of(1987), 26, LocalDate.parse("2020-03-08"), "100"))

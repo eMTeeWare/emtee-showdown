@@ -34,7 +34,17 @@
         <p>Once all participants have selected their candidates, one person can go to <a href="selection">the selection page</a> and choose one show from all selected ones.
         </p>
 
-
+        <h2>Clearing the selection</h2>
+        <p>Once the election process is done, you can click clear the selection to be ready for a new round:
+            <button onclick="function resetSelection() {
+                let request = new XMLHttpRequest();
+                request.open('DELETE', 'selection');
+                request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                request.send('id=*&user=emtee-admin');
+            }
+                resetSelection()">Reset selection
+            </button>
+        </p>
     </div>
     <div class="right-column">
         <div class="right-section">

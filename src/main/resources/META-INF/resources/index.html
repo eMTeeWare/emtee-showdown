@@ -13,6 +13,14 @@
         sizes="64x64"
         href="emtee-showdown-icon.png"
     />
+    <script>
+        function resetSelection() {
+            let request = new XMLHttpRequest();
+            request.open('DELETE', 'selection');
+            request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+            request.send('id=*&user=emtee-admin');
+        }
+    </script>
 </head>
 <body>
 
@@ -36,14 +44,7 @@
 
         <h2>Clearing the selection</h2>
         <p>Once the election process is done, you can click clear the selection to be ready for a new round:
-            <button onclick="function resetSelection() {
-                let request = new XMLHttpRequest();
-                request.open('DELETE', 'selection');
-                request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-                request.send('id=*&user=emtee-admin');
-            }
-                resetSelection()">Reset selection
-            </button>
+            <button onclick="resetSelection()">Reset selection</button>
         </p>
     </div>
     <div class="right-column">

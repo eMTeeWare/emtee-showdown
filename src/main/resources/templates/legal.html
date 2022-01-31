@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>eMTee Showdown - Legal Information</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="/settings/dark-mode.css" />
+    <script type="application/javascript" src="scripts.js"></script>
+    <script src="settings/load-settings.js" defer></script>
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="64x64"
+        href="emtee-showdown-icon.png"
+    />
+</head>
+<body>
+
+{#each dependency}
+<div id="{it.id}">
+    <p id="name-{it.id}" >{it.name}</p>
+</div>
+{/each}
+
+
+</body>
+</html>

@@ -6,6 +6,7 @@
   <artifactId>emtee-showdown</artifactId>
   <version>0.1-SNAPSHOT</version>
   <properties>
+    <maven.build.timestamp.format>yyyyMMdd'T'HHmmss'Z'</maven.build.timestamp.format>
     <compiler-plugin.version>3.8.1</compiler-plugin.version>
     <kotlin.version>1.5.31</kotlin.version>
     <maven.compiler.parameters>true</maven.compiler.parameters>
@@ -16,6 +17,9 @@
     <quarkus-plugin.version>2.3.1.Final</quarkus-plugin.version>
     <quarkus.platform.artifact-id>quarkus-universe-bom</quarkus.platform.artifact-id>
     <quarkus.platform.group-id>io.quarkus</quarkus.platform.group-id>
+    <quarkus.container-image.group>emteeware</quarkus.container-image.group>
+    <quarkus.container-image.tag>${project.version}-${maven.build.timestamp}</quarkus.container-image.tag>
+    <quarkus.container-image.additional-tags>dev,latest-snapshot</quarkus.container-image.additional-tags>
     <quarkus.platform.version>2.3.1.Final</quarkus.platform.version>
     <surefire-plugin.version>2.22.1</surefire-plugin.version>
   </properties>

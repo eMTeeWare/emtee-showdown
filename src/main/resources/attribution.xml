@@ -154,6 +154,23 @@
          </downloadUrls>
       </dependency>
       <dependency>
+         <name>Jackson module: JAXB Annotations</name>
+         <groupId>com.fasterxml.jackson.module</groupId>
+         <artifactId>jackson-module-jaxb-annotations</artifactId>
+         <version>2.12.5</version>
+         <projectUrl>https://github.com/FasterXML/jackson-modules-base</projectUrl>
+         <type>jar</type>
+         <licenses>
+            <license>
+               <name>The Apache Software License, Version 2.0</name>
+               <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            </license>
+         </licenses>
+         <downloadUrls>
+            <string>https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.12.5/jackson-module-jaxb-annotations-2.12.5.jar</string>
+         </downloadUrls>
+      </dependency>
+      <dependency>
          <name>Jackson-annotations</name>
          <groupId>com.fasterxml.jackson.core</groupId>
          <artifactId>jackson-annotations</artifactId>
@@ -202,6 +219,40 @@
          </licenses>
          <downloadUrls>
             <string>https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.12.5/jackson-databind-2.12.5.jar</string>
+         </downloadUrls>
+      </dependency>
+      <dependency>
+         <name>Jackson-dataformat-XML</name>
+         <groupId>com.fasterxml.jackson.dataformat</groupId>
+         <artifactId>jackson-dataformat-xml</artifactId>
+         <version>2.12.3</version>
+         <projectUrl>https://github.com/FasterXML/jackson-dataformat-xml</projectUrl>
+         <type>jar</type>
+         <licenses>
+            <license>
+               <name>The Apache Software License, Version 2.0</name>
+               <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            </license>
+         </licenses>
+         <downloadUrls>
+            <string>https://repo.maven.apache.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.12.3/jackson-dataformat-xml-2.12.3.jar</string>
+         </downloadUrls>
+      </dependency>
+      <dependency>
+         <name>jackson-module-kotlin</name>
+         <groupId>com.fasterxml.jackson.module</groupId>
+         <artifactId>jackson-module-kotlin</artifactId>
+         <version>2.12.3</version>
+         <projectUrl>https://github.com/FasterXML/jackson-module-kotlin</projectUrl>
+         <type>jar</type>
+         <licenses>
+            <license>
+               <name>The Apache Software License, Version 2.0</name>
+               <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            </license>
+         </licenses>
+         <downloadUrls>
+            <string>https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-kotlin/2.12.3/jackson-module-kotlin-2.12.3.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
@@ -291,6 +342,23 @@
          </licenses>
          <downloadUrls>
             <string>https://repo.maven.apache.org/maven2/com/sun/activation/jakarta.activation/1.2.1/jakarta.activation-1.2.1.jar</string>
+         </downloadUrls>
+      </dependency>
+      <dependency>
+         <name>JavaBeans Activation Framework API jar</name>
+         <groupId>jakarta.activation</groupId>
+         <artifactId>jakarta.activation-api</artifactId>
+         <version>1.2.1</version>
+         <projectUrl>https://github.com/eclipse-ee4j/jaf/jakarta.activation-api</projectUrl>
+         <type>jar</type>
+         <licenses>
+            <license>
+               <name>EDL 1.0</name>
+               <url>http://www.eclipse.org/org/documents/edl-v10.php</url>
+            </license>
+         </licenses>
+         <downloadUrls>
+            <string>https://repo.maven.apache.org/maven2/jakarta/activation/jakarta.activation-api/1.2.1/jakarta.activation-api-1.2.1.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
@@ -1521,6 +1589,23 @@
          </downloadUrls>
       </dependency>
       <dependency>
+         <name>Stax2 API</name>
+         <groupId>org.codehaus.woodstox</groupId>
+         <artifactId>stax2-api</artifactId>
+         <version>4.2</version>
+         <projectUrl>http://github.com/FasterXML/stax2-api</projectUrl>
+         <type>jar</type>
+         <licenses>
+            <license>
+               <name>The BSD License</name>
+               <url>http://www.opensource.org/licenses/bsd-license.php</url>
+            </license>
+         </licenses>
+         <downloadUrls>
+            <string>https://repo.maven.apache.org/maven2/org/codehaus/woodstox/stax2-api/4.2/stax2-api-4.2.jar</string>
+         </downloadUrls>
+      </dependency>
+      <dependency>
          <name>Vert.x Bridge Common</name>
          <groupId>io.vertx</groupId>
          <artifactId>vertx-bridge-common</artifactId>
@@ -1644,6 +1729,23 @@
          </licenses>
          <downloadUrls>
             <string>https://repo.maven.apache.org/maven2/io/vertx/vertx-web-common/4.1.4/vertx-web-common-4.1.4.jar</string>
+         </downloadUrls>
+      </dependency>
+      <dependency>
+         <name>Woodstox</name>
+         <groupId>com.fasterxml.woodstox</groupId>
+         <artifactId>woodstox-core</artifactId>
+         <version>6.1.1</version>
+         <projectUrl>https://github.com/FasterXML/woodstox</projectUrl>
+         <type>jar</type>
+         <licenses>
+            <license>
+               <name>The Apache License, Version 2.0</name>
+               <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            </license>
+         </licenses>
+         <downloadUrls>
+            <string>https://repo.maven.apache.org/maven2/com/fasterxml/woodstox/woodstox-core/6.1.1/woodstox-core-6.1.1.jar</string>
          </downloadUrls>
       </dependency>
    </dependencies>

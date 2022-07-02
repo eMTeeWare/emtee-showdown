@@ -398,7 +398,7 @@
          <name>Kotlin Stdlib Common</name>
          <groupId>org.jetbrains.kotlin</groupId>
          <artifactId>kotlin-stdlib-common</artifactId>
-         <version>1.6.21</version>
+         <version>1.7.0</version>
          <projectUrl>https://kotlinlang.org/</projectUrl>
          <type>jar</type>
          <licenses>
@@ -408,14 +408,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-common/1.6.21/kotlin-stdlib-common-1.6.21.jar</string>
+            <string>https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-common/1.7.0/kotlin-stdlib-common-1.7.0.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Kotlin Stdlib Jdk7</name>
          <groupId>org.jetbrains.kotlin</groupId>
          <artifactId>kotlin-stdlib-jdk7</artifactId>
-         <version>1.6.21</version>
+         <version>1.7.0</version>
          <projectUrl>https://kotlinlang.org/</projectUrl>
          <type>jar</type>
          <licenses>
@@ -425,7 +425,7 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.6.21/kotlin-stdlib-jdk7-1.6.21.jar</string>
+            <string>https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.7.0/kotlin-stdlib-jdk7-1.7.0.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>

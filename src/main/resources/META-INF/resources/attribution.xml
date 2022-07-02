@@ -55,8 +55,8 @@
          <name>ArC - Runtime</name>
          <groupId>io.quarkus.arc</groupId>
          <artifactId>arc</artifactId>
-         <version>2.7.0.Final</version>
-         <projectUrl>http://www.jboss.org/arc-parent/arc</projectUrl>
+         <version>2.10.1.Final</version>
+         <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
             <license>
@@ -65,7 +65,7 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/arc/arc/2.7.0.Final/arc-2.7.0.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/arc/arc/2.10.1.Final/arc-2.10.1.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
@@ -123,7 +123,7 @@
          <name>Jackson-annotations</name>
          <groupId>com.fasterxml.jackson.core</groupId>
          <artifactId>jackson-annotations</artifactId>
-         <version>2.13.1</version>
+         <version>2.13.3</version>
          <projectUrl>http://github.com/FasterXML/jackson</projectUrl>
          <type>jar</type>
          <licenses>
@@ -133,14 +133,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.13.1/jackson-annotations-2.13.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Jackson-core</name>
          <groupId>com.fasterxml.jackson.core</groupId>
          <artifactId>jackson-core</artifactId>
-         <version>2.13.1</version>
+         <version>2.13.3</version>
          <projectUrl>https://github.com/FasterXML/jackson-core</projectUrl>
          <type>jar</type>
          <licenses>
@@ -150,14 +150,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.13.1/jackson-core-2.13.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>jackson-databind</name>
          <groupId>com.fasterxml.jackson.core</groupId>
          <artifactId>jackson-databind</artifactId>
-         <version>2.13.1</version>
+         <version>2.13.3</version>
          <projectUrl>http://github.com/FasterXML/jackson</projectUrl>
          <type>jar</type>
          <licenses>
@@ -167,14 +167,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.13.1/jackson-databind-2.13.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Jackson-dataformat-XML</name>
          <groupId>com.fasterxml.jackson.dataformat</groupId>
          <artifactId>jackson-dataformat-xml</artifactId>
-         <version>2.13.1</version>
+         <version>2.13.3</version>
          <projectUrl>https://github.com/FasterXML/jackson-dataformat-xml</projectUrl>
          <type>jar</type>
          <licenses>
@@ -184,14 +184,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.13.1/jackson-dataformat-xml-2.13.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.13.3/jackson-dataformat-xml-2.13.3.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>jackson-module-kotlin</name>
          <groupId>com.fasterxml.jackson.module</groupId>
          <artifactId>jackson-module-kotlin</artifactId>
-         <version>2.13.1</version>
+         <version>2.13.3</version>
          <projectUrl>https://github.com/FasterXML/jackson-module-kotlin</projectUrl>
          <type>jar</type>
          <licenses>
@@ -201,7 +201,7 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-kotlin/2.13.1/jackson-module-kotlin-2.13.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-kotlin/2.13.3/jackson-module-kotlin-2.13.3.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
@@ -364,7 +364,7 @@
          <name>Kotlin Reflect</name>
          <groupId>org.jetbrains.kotlin</groupId>
          <artifactId>kotlin-reflect</artifactId>
-         <version>1.6.10</version>
+         <version>1.6.21</version>
          <projectUrl>https://kotlinlang.org/</projectUrl>
          <type>jar</type>
          <licenses>
@@ -374,14 +374,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-reflect/1.6.10/kotlin-reflect-1.6.10.jar</string>
+            <string>https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-reflect/1.6.21/kotlin-reflect-1.6.21.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Kotlin Stdlib</name>
          <groupId>org.jetbrains.kotlin</groupId>
          <artifactId>kotlin-stdlib</artifactId>
-         <version>1.6.10</version>
+         <version>1.6.21</version>
          <projectUrl>https://kotlinlang.org/</projectUrl>
          <type>jar</type>
          <licenses>
@@ -391,14 +391,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/1.6.10/kotlin-stdlib-1.6.10.jar</string>
+            <string>https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/1.6.21/kotlin-stdlib-1.6.21.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Kotlin Stdlib Common</name>
          <groupId>org.jetbrains.kotlin</groupId>
          <artifactId>kotlin-stdlib-common</artifactId>
-         <version>1.6.10</version>
+         <version>1.6.21</version>
          <projectUrl>https://kotlinlang.org/</projectUrl>
          <type>jar</type>
          <licenses>
@@ -408,14 +408,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-common/1.6.10/kotlin-stdlib-common-1.6.10.jar</string>
+            <string>https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-common/1.6.21/kotlin-stdlib-common-1.6.21.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Kotlin Stdlib Jdk7</name>
          <groupId>org.jetbrains.kotlin</groupId>
          <artifactId>kotlin-stdlib-jdk7</artifactId>
-         <version>1.6.10</version>
+         <version>1.6.21</version>
          <projectUrl>https://kotlinlang.org/</projectUrl>
          <type>jar</type>
          <licenses>
@@ -425,14 +425,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.6.10/kotlin-stdlib-jdk7-1.6.10.jar</string>
+            <string>https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.6.21/kotlin-stdlib-jdk7-1.6.21.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Kotlin Stdlib Jdk8</name>
          <groupId>org.jetbrains.kotlin</groupId>
          <artifactId>kotlin-stdlib-jdk8</artifactId>
-         <version>1.6.10</version>
+         <version>1.6.21</version>
          <projectUrl>https://kotlinlang.org/</projectUrl>
          <type>jar</type>
          <licenses>
@@ -442,14 +442,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.6.10/kotlin-stdlib-jdk8-1.6.10.jar</string>
+            <string>https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.6.21/kotlin-stdlib-jdk8-1.6.21.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>kotlinx-coroutines-core</name>
          <groupId>org.jetbrains.kotlinx</groupId>
          <artifactId>kotlinx-coroutines-core</artifactId>
-         <version>1.6.0</version>
+         <version>1.6.2</version>
          <projectUrl>https://github.com/Kotlin/kotlinx.coroutines</projectUrl>
          <type>jar</type>
          <licenses>
@@ -459,14 +459,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core/1.6.0/kotlinx-coroutines-core-1.6.0.jar</string>
+            <string>https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core/1.6.2/kotlinx-coroutines-core-1.6.2.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>kotlinx-coroutines-core</name>
          <groupId>org.jetbrains.kotlinx</groupId>
          <artifactId>kotlinx-coroutines-core-jvm</artifactId>
-         <version>1.6.0</version>
+         <version>1.6.2</version>
          <projectUrl>https://github.com/Kotlin/kotlinx.coroutines</projectUrl>
          <type>jar</type>
          <licenses>
@@ -476,14 +476,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.6.0/kotlinx-coroutines-core-jvm-1.6.0.jar</string>
+            <string>https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.6.2/kotlinx-coroutines-core-jvm-1.6.2.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>kotlinx-coroutines-jdk8</name>
          <groupId>org.jetbrains.kotlinx</groupId>
          <artifactId>kotlinx-coroutines-jdk8</artifactId>
-         <version>1.6.0</version>
+         <version>1.6.2</version>
          <projectUrl>https://github.com/Kotlin/kotlinx.coroutines</projectUrl>
          <type>jar</type>
          <licenses>
@@ -493,7 +493,7 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-jdk8/1.6.0/kotlinx-coroutines-jdk8-1.6.0.jar</string>
+            <string>https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-jdk8/1.6.2/kotlinx-coroutines-jdk8-1.6.2.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
@@ -534,7 +534,7 @@
          <name>Netty/Buffer</name>
          <groupId>io.netty</groupId>
          <artifactId>netty-buffer</artifactId>
-         <version>4.1.73.Final</version>
+         <version>4.1.74.Final</version>
          <projectUrl>https://netty.io/netty-buffer/</projectUrl>
          <type>jar</type>
          <licenses>
@@ -544,14 +544,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/netty/netty-buffer/4.1.73.Final/netty-buffer-4.1.73.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/netty/netty-buffer/4.1.74.Final/netty-buffer-4.1.74.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Netty/Codec</name>
          <groupId>io.netty</groupId>
          <artifactId>netty-codec</artifactId>
-         <version>4.1.73.Final</version>
+         <version>4.1.74.Final</version>
          <projectUrl>https://netty.io/netty-codec/</projectUrl>
          <type>jar</type>
          <licenses>
@@ -561,14 +561,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/netty/netty-codec/4.1.73.Final/netty-codec-4.1.73.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/netty/netty-codec/4.1.74.Final/netty-codec-4.1.74.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Netty/Codec/DNS</name>
          <groupId>io.netty</groupId>
          <artifactId>netty-codec-dns</artifactId>
-         <version>4.1.73.Final</version>
+         <version>4.1.74.Final</version>
          <projectUrl>https://netty.io/netty-codec-dns/</projectUrl>
          <type>jar</type>
          <licenses>
@@ -578,14 +578,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/netty/netty-codec-dns/4.1.73.Final/netty-codec-dns-4.1.73.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/netty/netty-codec-dns/4.1.74.Final/netty-codec-dns-4.1.74.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Netty/Codec/HAProxy</name>
          <groupId>io.netty</groupId>
          <artifactId>netty-codec-haproxy</artifactId>
-         <version>4.1.73.Final</version>
+         <version>4.1.74.Final</version>
          <projectUrl>https://netty.io/netty-codec-haproxy/</projectUrl>
          <type>jar</type>
          <licenses>
@@ -595,14 +595,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/netty/netty-codec-haproxy/4.1.73.Final/netty-codec-haproxy-4.1.73.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/netty/netty-codec-haproxy/4.1.74.Final/netty-codec-haproxy-4.1.74.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Netty/Codec/HTTP</name>
          <groupId>io.netty</groupId>
          <artifactId>netty-codec-http</artifactId>
-         <version>4.1.73.Final</version>
+         <version>4.1.74.Final</version>
          <projectUrl>https://netty.io/netty-codec-http/</projectUrl>
          <type>jar</type>
          <licenses>
@@ -612,14 +612,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/netty/netty-codec-http/4.1.73.Final/netty-codec-http-4.1.73.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/netty/netty-codec-http/4.1.74.Final/netty-codec-http-4.1.74.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Netty/Codec/HTTP2</name>
          <groupId>io.netty</groupId>
          <artifactId>netty-codec-http2</artifactId>
-         <version>4.1.73.Final</version>
+         <version>4.1.74.Final</version>
          <projectUrl>https://netty.io/netty-codec-http2/</projectUrl>
          <type>jar</type>
          <licenses>
@@ -629,14 +629,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/netty/netty-codec-http2/4.1.73.Final/netty-codec-http2-4.1.73.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/netty/netty-codec-http2/4.1.74.Final/netty-codec-http2-4.1.74.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Netty/Codec/Socks</name>
          <groupId>io.netty</groupId>
          <artifactId>netty-codec-socks</artifactId>
-         <version>4.1.73.Final</version>
+         <version>4.1.74.Final</version>
          <projectUrl>https://netty.io/netty-codec-socks/</projectUrl>
          <type>jar</type>
          <licenses>
@@ -646,14 +646,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/netty/netty-codec-socks/4.1.73.Final/netty-codec-socks-4.1.73.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/netty/netty-codec-socks/4.1.74.Final/netty-codec-socks-4.1.74.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Netty/Common</name>
          <groupId>io.netty</groupId>
          <artifactId>netty-common</artifactId>
-         <version>4.1.73.Final</version>
+         <version>4.1.74.Final</version>
          <projectUrl>https://netty.io/netty-common/</projectUrl>
          <type>jar</type>
          <licenses>
@@ -663,14 +663,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/netty/netty-common/4.1.73.Final/netty-common-4.1.73.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/netty/netty-common/4.1.74.Final/netty-common-4.1.74.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Netty/Handler</name>
          <groupId>io.netty</groupId>
          <artifactId>netty-handler</artifactId>
-         <version>4.1.73.Final</version>
+         <version>4.1.74.Final</version>
          <projectUrl>https://netty.io/netty-handler/</projectUrl>
          <type>jar</type>
          <licenses>
@@ -680,14 +680,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/netty/netty-handler/4.1.73.Final/netty-handler-4.1.73.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/netty/netty-handler/4.1.74.Final/netty-handler-4.1.74.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Netty/Handler/Proxy</name>
          <groupId>io.netty</groupId>
          <artifactId>netty-handler-proxy</artifactId>
-         <version>4.1.73.Final</version>
+         <version>4.1.74.Final</version>
          <projectUrl>https://netty.io/netty-handler-proxy/</projectUrl>
          <type>jar</type>
          <licenses>
@@ -697,14 +697,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/netty/netty-handler-proxy/4.1.73.Final/netty-handler-proxy-4.1.73.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/netty/netty-handler-proxy/4.1.74.Final/netty-handler-proxy-4.1.74.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Netty/Resolver</name>
          <groupId>io.netty</groupId>
          <artifactId>netty-resolver</artifactId>
-         <version>4.1.73.Final</version>
+         <version>4.1.74.Final</version>
          <projectUrl>https://netty.io/netty-resolver/</projectUrl>
          <type>jar</type>
          <licenses>
@@ -714,14 +714,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/netty/netty-resolver/4.1.73.Final/netty-resolver-4.1.73.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/netty/netty-resolver/4.1.74.Final/netty-resolver-4.1.74.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Netty/Resolver/DNS</name>
          <groupId>io.netty</groupId>
          <artifactId>netty-resolver-dns</artifactId>
-         <version>4.1.73.Final</version>
+         <version>4.1.74.Final</version>
          <projectUrl>https://netty.io/netty-resolver-dns/</projectUrl>
          <type>jar</type>
          <licenses>
@@ -731,26 +731,31 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/netty/netty-resolver-dns/4.1.73.Final/netty-resolver-dns-4.1.73.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/netty/netty-resolver-dns/4.1.74.Final/netty-resolver-dns-4.1.74.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Netty/TomcatNative [OpenSSL - Classes]</name>
          <groupId>io.netty</groupId>
          <artifactId>netty-tcnative-classes</artifactId>
-         <version>2.0.46.Final</version>
+         <version>2.0.48.Final</version>
          <projectUrl>https://github.com/netty/netty-tcnative/netty-tcnative-classes/</projectUrl>
          <type>jar</type>
-         <licenses/>
+         <licenses>
+            <license>
+               <name>The Apache Software License, Version 2.0</name>
+               <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            </license>
+         </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/netty/netty-tcnative-classes/2.0.46.Final/netty-tcnative-classes-2.0.46.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/netty/netty-tcnative-classes/2.0.48.Final/netty-tcnative-classes-2.0.48.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Netty/Transport</name>
          <groupId>io.netty</groupId>
          <artifactId>netty-transport</artifactId>
-         <version>4.1.73.Final</version>
+         <version>4.1.74.Final</version>
          <projectUrl>https://netty.io/netty-transport/</projectUrl>
          <type>jar</type>
          <licenses>
@@ -760,7 +765,24 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/netty/netty-transport/4.1.73.Final/netty-transport-4.1.73.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/netty/netty-transport/4.1.74.Final/netty-transport-4.1.74.Final.jar</string>
+         </downloadUrls>
+      </dependency>
+      <dependency>
+         <name>org-crac</name>
+         <groupId>io.github.crac</groupId>
+         <artifactId>org-crac</artifactId>
+         <version>0.1.1</version>
+         <projectUrl>https://github.com/crac/org.crac</projectUrl>
+         <type>jar</type>
+         <licenses>
+            <license>
+               <name>BSD-2-Clause</name>
+               <url>https://opensource.org/licenses/BSD-2-Clause</url>
+            </license>
+         </licenses>
+         <downloadUrls>
+            <string>https://repo.maven.apache.org/maven2/io/github/crac/org-crac/0.1.1/org-crac-0.1.1.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
@@ -788,8 +810,8 @@
          <name>Quarkus - Apache HttpClient - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-apache-httpclient</artifactId>
-         <version>2.7.0.Final</version>
-         <projectUrl>https://github.com/quarkusio/quarkus/quarkus-build-parent/quarkus-extensions-parent/quarkus-apache-httpclient-parent/quarkus-apache-httpclient</projectUrl>
+         <version>2.10.1.Final</version>
+         <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
             <license>
@@ -798,15 +820,15 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-apache-httpclient/2.7.0.Final/quarkus-apache-httpclient-2.7.0.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-apache-httpclient/2.10.1.Final/quarkus-apache-httpclient-2.10.1.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - ArC - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-arc</artifactId>
-         <version>2.7.0.Final</version>
-         <projectUrl>https://github.com/quarkusio/quarkus/quarkus-build-parent/quarkus-extensions-parent/quarkus-arc-parent/quarkus-arc</projectUrl>
+         <version>2.10.1.Final</version>
+         <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
             <license>
@@ -815,15 +837,15 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-arc/2.7.0.Final/quarkus-arc-2.7.0.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-arc/2.10.1.Final/quarkus-arc-2.10.1.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - Container Image - Docker</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-container-image-docker</artifactId>
-         <version>2.7.0.Final</version>
-         <projectUrl>https://github.com/quarkusio/quarkus/quarkus-build-parent/quarkus-extensions-parent/quarkus-container-image-parent/quarkus-container-image-docker-parent/quarkus-container-image-docker</projectUrl>
+         <version>2.10.1.Final</version>
+         <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
             <license>
@@ -832,15 +854,15 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-container-image-docker/2.7.0.Final/quarkus-container-image-docker-2.7.0.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-container-image-docker/2.10.1.Final/quarkus-container-image-docker-2.10.1.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - Container Image - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-container-image</artifactId>
-         <version>2.7.0.Final</version>
-         <projectUrl>https://github.com/quarkusio/quarkus/quarkus-build-parent/quarkus-extensions-parent/quarkus-container-image-parent/quarkus-container-image</projectUrl>
+         <version>2.10.1.Final</version>
+         <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
             <license>
@@ -849,15 +871,15 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-container-image/2.7.0.Final/quarkus-container-image-2.7.0.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-container-image/2.10.1.Final/quarkus-container-image-2.10.1.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - JSON-B - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-jsonb</artifactId>
-         <version>2.7.0.Final</version>
-         <projectUrl>https://github.com/quarkusio/quarkus/quarkus-build-parent/quarkus-extensions-parent/quarkus-jsonb-parent/quarkus-jsonb</projectUrl>
+         <version>2.10.1.Final</version>
+         <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
             <license>
@@ -866,15 +888,15 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-jsonb/2.7.0.Final/quarkus-jsonb-2.7.0.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-jsonb/2.10.1.Final/quarkus-jsonb-2.10.1.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - JSON-P - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-jsonp</artifactId>
-         <version>2.7.0.Final</version>
-         <projectUrl>https://github.com/quarkusio/quarkus/quarkus-build-parent/quarkus-extensions-parent/quarkus-jsonp-parent/quarkus-jsonp</projectUrl>
+         <version>2.10.1.Final</version>
+         <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
             <license>
@@ -883,15 +905,15 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-jsonp/2.7.0.Final/quarkus-jsonp-2.7.0.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-jsonp/2.10.1.Final/quarkus-jsonp-2.10.1.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - Kotlin - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-kotlin</artifactId>
-         <version>2.7.0.Final</version>
-         <projectUrl>https://github.com/quarkusio/quarkus/quarkus-build-parent/quarkus-extensions-parent/quarkus-kotlin-parent/quarkus-kotlin</projectUrl>
+         <version>2.10.1.Final</version>
+         <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
             <license>
@@ -900,15 +922,32 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-kotlin/2.7.0.Final/quarkus-kotlin-2.7.0.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-kotlin/2.10.1.Final/quarkus-kotlin-2.10.1.Final.jar</string>
+         </downloadUrls>
+      </dependency>
+      <dependency>
+         <name>Quarkus - Mutiny - Runtime</name>
+         <groupId>io.quarkus</groupId>
+         <artifactId>quarkus-mutiny</artifactId>
+         <version>2.10.1.Final</version>
+         <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
+         <type>jar</type>
+         <licenses>
+            <license>
+               <name>The Apache Software License, Version 2.0</name>
+               <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            </license>
+         </licenses>
+         <downloadUrls>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-mutiny/2.10.1.Final/quarkus-mutiny-2.10.1.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - Netty - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-netty</artifactId>
-         <version>2.7.0.Final</version>
-         <projectUrl>https://github.com/quarkusio/quarkus/quarkus-build-parent/quarkus-extensions-parent/quarkus-netty-parent/quarkus-netty</projectUrl>
+         <version>2.10.1.Final</version>
+         <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
             <license>
@@ -917,15 +956,15 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-netty/2.7.0.Final/quarkus-netty-2.7.0.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-netty/2.10.1.Final/quarkus-netty-2.10.1.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - Qute - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-qute</artifactId>
-         <version>2.7.0.Final</version>
-         <projectUrl>https://github.com/quarkusio/quarkus/quarkus-build-parent/quarkus-extensions-parent/quarkus-qute-parent/quarkus-qute</projectUrl>
+         <version>2.10.1.Final</version>
+         <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
             <license>
@@ -934,15 +973,15 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-qute/2.7.0.Final/quarkus-qute-2.7.0.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-qute/2.10.1.Final/quarkus-qute-2.10.1.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - REST Client - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-rest-client</artifactId>
-         <version>2.7.0.Final</version>
-         <projectUrl>https://github.com/quarkusio/quarkus/quarkus-build-parent/quarkus-extensions-parent/quarkus-resteasy-parent-aggregator/quarkus-rest-client-parent/quarkus-rest-client</projectUrl>
+         <version>2.10.1.Final</version>
+         <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
             <license>
@@ -951,15 +990,15 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-rest-client/2.7.0.Final/quarkus-rest-client-2.7.0.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-rest-client/2.10.1.Final/quarkus-rest-client-2.10.1.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - REST Client Config - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-rest-client-config</artifactId>
-         <version>2.7.0.Final</version>
-         <projectUrl>https://github.com/quarkusio/quarkus/quarkus-build-parent/quarkus-extensions-parent/quarkus-resteasy-parent-aggregator/quarkus-rest-client-config-parent/quarkus-rest-client-config</projectUrl>
+         <version>2.10.1.Final</version>
+         <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
             <license>
@@ -968,15 +1007,15 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-rest-client-config/2.7.0.Final/quarkus-rest-client-config-2.7.0.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-rest-client-config/2.10.1.Final/quarkus-rest-client-config-2.10.1.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - RESTEasy - Common - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-resteasy-common</artifactId>
-         <version>2.7.0.Final</version>
-         <projectUrl>https://github.com/quarkusio/quarkus/quarkus-build-parent/quarkus-extensions-parent/quarkus-resteasy-parent-aggregator/quarkus-resteasy-common-parent/quarkus-resteasy-common</projectUrl>
+         <version>2.10.1.Final</version>
+         <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
             <license>
@@ -985,15 +1024,15 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-resteasy-common/2.7.0.Final/quarkus-resteasy-common-2.7.0.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-resteasy-common/2.10.1.Final/quarkus-resteasy-common-2.10.1.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - RESTEasy - JSON-B - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-resteasy-jsonb</artifactId>
-         <version>2.7.0.Final</version>
-         <projectUrl>https://github.com/quarkusio/quarkus/quarkus-build-parent/quarkus-extensions-parent/quarkus-resteasy-parent-aggregator/quarkus-resteasy-jsonb-parent/quarkus-resteasy-jsonb</projectUrl>
+         <version>2.10.1.Final</version>
+         <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
             <license>
@@ -1002,15 +1041,15 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-resteasy-jsonb/2.7.0.Final/quarkus-resteasy-jsonb-2.7.0.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-resteasy-jsonb/2.10.1.Final/quarkus-resteasy-jsonb-2.10.1.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - RESTEasy - Qute - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-resteasy-qute</artifactId>
-         <version>2.7.0.Final</version>
-         <projectUrl>https://github.com/quarkusio/quarkus/quarkus-build-parent/quarkus-extensions-parent/quarkus-resteasy-parent-aggregator/quarkus-resteasy-qute-parent/quarkus-resteasy-qute</projectUrl>
+         <version>2.10.1.Final</version>
+         <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
             <license>
@@ -1019,15 +1058,15 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-resteasy-qute/2.7.0.Final/quarkus-resteasy-qute-2.7.0.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-resteasy-qute/2.10.1.Final/quarkus-resteasy-qute-2.10.1.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - RESTEasy - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-resteasy</artifactId>
-         <version>2.7.0.Final</version>
-         <projectUrl>https://github.com/quarkusio/quarkus/quarkus-build-parent/quarkus-extensions-parent/quarkus-resteasy-parent-aggregator/quarkus-resteasy-parent/quarkus-resteasy</projectUrl>
+         <version>2.10.1.Final</version>
+         <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
             <license>
@@ -1036,15 +1075,15 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-resteasy/2.7.0.Final/quarkus-resteasy-2.7.0.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-resteasy/2.10.1.Final/quarkus-resteasy-2.10.1.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - RESTEasy - Server common - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-resteasy-server-common</artifactId>
-         <version>2.7.0.Final</version>
-         <projectUrl>https://github.com/quarkusio/quarkus/quarkus-build-parent/quarkus-extensions-parent/quarkus-resteasy-parent-aggregator/quarkus-resteasy-server-common-parent/quarkus-resteasy-server-common</projectUrl>
+         <version>2.10.1.Final</version>
+         <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
             <license>
@@ -1053,15 +1092,15 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-resteasy-server-common/2.7.0.Final/quarkus-resteasy-server-common-2.7.0.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-resteasy-server-common/2.10.1.Final/quarkus-resteasy-server-common-2.10.1.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - Security - Runtime SPI</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-security-runtime-spi</artifactId>
-         <version>2.7.0.Final</version>
-         <projectUrl>https://github.com/quarkusio/quarkus/quarkus-build-parent/quarkus-extensions-parent/quarkus-security-parent/quarkus-security-runtime-spi</projectUrl>
+         <version>2.10.1.Final</version>
+         <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
             <license>
@@ -1070,15 +1109,32 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-security-runtime-spi/2.7.0.Final/quarkus-security-runtime-spi-2.7.0.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-security-runtime-spi/2.10.1.Final/quarkus-security-runtime-spi-2.10.1.Final.jar</string>
+         </downloadUrls>
+      </dependency>
+      <dependency>
+         <name>Quarkus - SmallRye Context Propagation - Runtime</name>
+         <groupId>io.quarkus</groupId>
+         <artifactId>quarkus-smallrye-context-propagation</artifactId>
+         <version>2.10.1.Final</version>
+         <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
+         <type>jar</type>
+         <licenses>
+            <license>
+               <name>The Apache Software License, Version 2.0</name>
+               <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            </license>
+         </licenses>
+         <downloadUrls>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-smallrye-context-propagation/2.10.1.Final/quarkus-smallrye-context-propagation-2.10.1.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - Vert.x - HTTP - Dev Console Runtime SPI</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-vertx-http-dev-console-runtime-spi</artifactId>
-         <version>2.7.0.Final</version>
-         <projectUrl>https://github.com/quarkusio/quarkus/quarkus-build-parent/quarkus-extensions-parent/quarkus-vertx-http-parent/quarkus-vertx-http-dev-console-runtime-spi</projectUrl>
+         <version>2.10.1.Final</version>
+         <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
             <license>
@@ -1087,15 +1143,15 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-vertx-http-dev-console-runtime-spi/2.7.0.Final/quarkus-vertx-http-dev-console-runtime-spi-2.7.0.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-vertx-http-dev-console-runtime-spi/2.10.1.Final/quarkus-vertx-http-dev-console-runtime-spi-2.10.1.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - Vert.x - HTTP - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-vertx-http</artifactId>
-         <version>2.7.0.Final</version>
-         <projectUrl>https://github.com/quarkusio/quarkus/quarkus-build-parent/quarkus-extensions-parent/quarkus-vertx-http-parent/quarkus-vertx-http</projectUrl>
+         <version>2.10.1.Final</version>
+         <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
             <license>
@@ -1104,15 +1160,15 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-vertx-http/2.7.0.Final/quarkus-vertx-http-2.7.0.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-vertx-http/2.10.1.Final/quarkus-vertx-http-2.10.1.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - Vert.x - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-vertx</artifactId>
-         <version>2.7.0.Final</version>
-         <projectUrl>https://github.com/quarkusio/quarkus/quarkus-build-parent/quarkus-extensions-parent/quarkus-vertx-parent/quarkus-vertx</projectUrl>
+         <version>2.10.1.Final</version>
+         <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
             <license>
@@ -1121,7 +1177,7 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-vertx/2.7.0.Final/quarkus-vertx-2.7.0.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-vertx/2.10.1.Final/quarkus-vertx-2.10.1.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
@@ -1145,8 +1201,8 @@
          <name>Qute - Core</name>
          <groupId>io.quarkus.qute</groupId>
          <artifactId>qute-core</artifactId>
-         <version>2.7.0.Final</version>
-         <projectUrl>http://www.jboss.org/qute-parent/qute-core</projectUrl>
+         <version>2.10.1.Final</version>
+         <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
             <license>
@@ -1155,7 +1211,7 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/qute/qute-core/2.7.0.Final/qute-core-2.7.0.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/qute/qute-core/2.10.1.Final/qute-core-2.10.1.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
@@ -1332,7 +1388,7 @@
          <name>SmallRye Common: Annotations</name>
          <groupId>io.smallrye.common</groupId>
          <artifactId>smallrye-common-annotation</artifactId>
-         <version>1.8.0</version>
+         <version>1.12.0</version>
          <projectUrl>http://smallrye.io/smallrye-common-annotation</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1342,14 +1398,65 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/smallrye/common/smallrye-common-annotation/1.8.0/smallrye-common-annotation-1.8.0.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/smallrye/common/smallrye-common-annotation/1.12.0/smallrye-common-annotation-1.12.0.jar</string>
+         </downloadUrls>
+      </dependency>
+      <dependency>
+         <name>SmallRye Common: Constraints</name>
+         <groupId>io.smallrye.common</groupId>
+         <artifactId>smallrye-common-constraint</artifactId>
+         <version>1.12.0</version>
+         <projectUrl>http://smallrye.io/smallrye-common-constraint</projectUrl>
+         <type>jar</type>
+         <licenses>
+            <license>
+               <name>Apache License, Version 2.0</name>
+               <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            </license>
+         </licenses>
+         <downloadUrls>
+            <string>https://repo.maven.apache.org/maven2/io/smallrye/common/smallrye-common-constraint/1.12.0/smallrye-common-constraint-1.12.0.jar</string>
+         </downloadUrls>
+      </dependency>
+      <dependency>
+         <name>SmallRye Common: Vert.x Context Utilities</name>
+         <groupId>io.smallrye.common</groupId>
+         <artifactId>smallrye-common-vertx-context</artifactId>
+         <version>1.12.0</version>
+         <projectUrl>http://smallrye.io/smallrye-common-vertx-context</projectUrl>
+         <type>jar</type>
+         <licenses>
+            <license>
+               <name>Apache License, Version 2.0</name>
+               <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            </license>
+         </licenses>
+         <downloadUrls>
+            <string>https://repo.maven.apache.org/maven2/io/smallrye/common/smallrye-common-vertx-context/1.12.0/smallrye-common-vertx-context-1.12.0.jar</string>
+         </downloadUrls>
+      </dependency>
+      <dependency>
+         <name>SmallRye Fault Tolerance: Kotlin Integration</name>
+         <groupId>io.smallrye</groupId>
+         <artifactId>smallrye-fault-tolerance-kotlin</artifactId>
+         <version>5.4.1</version>
+         <projectUrl>http://smallrye.io/smallrye-fault-tolerance-implementation-parent/smallrye-fault-tolerance-kotlin</projectUrl>
+         <type>jar</type>
+         <licenses>
+            <license>
+               <name>Apache License, Version 2.0</name>
+               <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            </license>
+         </licenses>
+         <downloadUrls>
+            <string>https://repo.maven.apache.org/maven2/io/smallrye/smallrye-fault-tolerance-kotlin/5.4.1/smallrye-fault-tolerance-kotlin-5.4.1.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>SmallRye Fault Tolerance: Vert.x Integration</name>
          <groupId>io.smallrye</groupId>
          <artifactId>smallrye-fault-tolerance-vertx</artifactId>
-         <version>5.2.1</version>
+         <version>5.4.1</version>
          <projectUrl>http://smallrye.io/smallrye-fault-tolerance-implementation-parent/smallrye-fault-tolerance-vertx</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1359,14 +1466,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/smallrye/smallrye-fault-tolerance-vertx/5.2.1/smallrye-fault-tolerance-vertx-5.2.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/smallrye/smallrye-fault-tolerance-vertx/5.4.1/smallrye-fault-tolerance-vertx-5.4.1.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>SmallRye Mutiny - Code Generator</name>
          <groupId>io.smallrye.reactive</groupId>
          <artifactId>vertx-mutiny-generator</artifactId>
-         <version>2.18.1</version>
+         <version>2.22.0</version>
          <projectUrl>https://smallrye.io/smallrye-mutiny-vertx-bindings/vertx-mutiny-generator</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1376,14 +1483,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/smallrye/reactive/vertx-mutiny-generator/2.18.1/vertx-mutiny-generator-2.18.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/smallrye/reactive/vertx-mutiny-generator/2.22.0/vertx-mutiny-generator-2.22.0.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>SmallRye Mutiny - Core library</name>
          <groupId>io.smallrye.reactive</groupId>
          <artifactId>mutiny</artifactId>
-         <version>1.3.1</version>
+         <version>1.6.0</version>
          <projectUrl>https://smallrye.io/smallrye-mutiny/mutiny</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1393,14 +1500,31 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/smallrye/reactive/mutiny/1.3.1/mutiny-1.3.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/smallrye/reactive/mutiny/1.6.0/mutiny-1.6.0.jar</string>
+         </downloadUrls>
+      </dependency>
+      <dependency>
+         <name>SmallRye Mutiny - Integration with SmallRye Context Propagation</name>
+         <groupId>io.smallrye.reactive</groupId>
+         <artifactId>mutiny-smallrye-context-propagation</artifactId>
+         <version>1.6.0</version>
+         <projectUrl>https://smallrye.io/smallrye-mutiny/mutiny-smallrye-context-propagation</projectUrl>
+         <type>jar</type>
+         <licenses>
+            <license>
+               <name>Apache License, Version 2.0</name>
+               <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            </license>
+         </licenses>
+         <downloadUrls>
+            <string>https://repo.maven.apache.org/maven2/io/smallrye/reactive/mutiny-smallrye-context-propagation/1.6.0/mutiny-smallrye-context-propagation-1.6.0.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>SmallRye Mutiny - Kotlin Extensions</name>
          <groupId>io.smallrye.reactive</groupId>
          <artifactId>mutiny-kotlin</artifactId>
-         <version>1.3.1</version>
+         <version>1.6.0</version>
          <projectUrl>https://smallrye.io/smallrye-mutiny/mutiny-kotlin</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1410,14 +1534,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/smallrye/reactive/mutiny-kotlin/1.3.1/mutiny-kotlin-1.3.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/smallrye/reactive/mutiny-kotlin/1.6.0/mutiny-kotlin-1.6.0.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>SmallRye Mutiny - Runtime Helpers</name>
          <groupId>io.smallrye.reactive</groupId>
          <artifactId>smallrye-mutiny-vertx-runtime</artifactId>
-         <version>2.18.1</version>
+         <version>2.22.0</version>
          <projectUrl>https://smallrye.io/smallrye-mutiny-vertx-bindings/vertx-mutiny-clients/smallrye-mutiny-vertx-runtime</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1427,14 +1551,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/smallrye/reactive/smallrye-mutiny-vertx-runtime/2.18.1/smallrye-mutiny-vertx-runtime-2.18.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/smallrye/reactive/smallrye-mutiny-vertx-runtime/2.22.0/smallrye-mutiny-vertx-runtime-2.22.0.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>SmallRye Mutiny - Vert.x Auth Common</name>
          <groupId>io.smallrye.reactive</groupId>
          <artifactId>smallrye-mutiny-vertx-auth-common</artifactId>
-         <version>2.18.1</version>
+         <version>2.22.0</version>
          <projectUrl>https://smallrye.io/smallrye-mutiny-vertx-bindings/vertx-mutiny-clients/smallrye-mutiny-vertx-auth-common</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1444,14 +1568,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/smallrye/reactive/smallrye-mutiny-vertx-auth-common/2.18.1/smallrye-mutiny-vertx-auth-common-2.18.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/smallrye/reactive/smallrye-mutiny-vertx-auth-common/2.22.0/smallrye-mutiny-vertx-auth-common-2.22.0.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>SmallRye Mutiny - Vert.x Bridge Common</name>
          <groupId>io.smallrye.reactive</groupId>
          <artifactId>smallrye-mutiny-vertx-bridge-common</artifactId>
-         <version>2.18.1</version>
+         <version>2.22.0</version>
          <projectUrl>https://smallrye.io/smallrye-mutiny-vertx-bindings/vertx-mutiny-clients/smallrye-mutiny-vertx-bridge-common</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1461,14 +1585,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/smallrye/reactive/smallrye-mutiny-vertx-bridge-common/2.18.1/smallrye-mutiny-vertx-bridge-common-2.18.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/smallrye/reactive/smallrye-mutiny-vertx-bridge-common/2.22.0/smallrye-mutiny-vertx-bridge-common-2.22.0.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>SmallRye Mutiny - Vert.x Core</name>
          <groupId>io.smallrye.reactive</groupId>
          <artifactId>smallrye-mutiny-vertx-core</artifactId>
-         <version>2.18.1</version>
+         <version>2.22.0</version>
          <projectUrl>https://smallrye.io/smallrye-mutiny-vertx-bindings/vertx-mutiny-clients/smallrye-mutiny-vertx-core</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1478,14 +1602,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/smallrye/reactive/smallrye-mutiny-vertx-core/2.18.1/smallrye-mutiny-vertx-core-2.18.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/smallrye/reactive/smallrye-mutiny-vertx-core/2.22.0/smallrye-mutiny-vertx-core-2.22.0.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>SmallRye Mutiny - Vert.x Web</name>
          <groupId>io.smallrye.reactive</groupId>
          <artifactId>smallrye-mutiny-vertx-web</artifactId>
-         <version>2.18.1</version>
+         <version>2.22.0</version>
          <projectUrl>https://smallrye.io/smallrye-mutiny-vertx-bindings/vertx-mutiny-clients/smallrye-mutiny-vertx-web</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1495,14 +1619,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/smallrye/reactive/smallrye-mutiny-vertx-web/2.18.1/smallrye-mutiny-vertx-web-2.18.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/smallrye/reactive/smallrye-mutiny-vertx-web/2.22.0/smallrye-mutiny-vertx-web-2.22.0.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>SmallRye Mutiny - Vert.x Web Common</name>
          <groupId>io.smallrye.reactive</groupId>
          <artifactId>smallrye-mutiny-vertx-web-common</artifactId>
-         <version>2.18.1</version>
+         <version>2.22.0</version>
          <projectUrl>https://smallrye.io/smallrye-mutiny-vertx-bindings/vertx-mutiny-clients/smallrye-mutiny-vertx-web-common</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1512,7 +1636,58 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/smallrye/reactive/smallrye-mutiny-vertx-web-common/2.18.1/smallrye-mutiny-vertx-web-common-2.18.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/smallrye/reactive/smallrye-mutiny-vertx-web-common/2.22.0/smallrye-mutiny-vertx-web-common-2.22.0.jar</string>
+         </downloadUrls>
+      </dependency>
+      <dependency>
+         <name>smallrye-context-propagation</name>
+         <groupId>io.smallrye</groupId>
+         <artifactId>smallrye-context-propagation</artifactId>
+         <version>1.2.2</version>
+         <projectUrl>https://github.com/smallrye/smallrye-context-propagation/smallrye-context-propagation</projectUrl>
+         <type>jar</type>
+         <licenses>
+            <license>
+               <name>The Apache Software License, Version 2.0</name>
+               <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            </license>
+         </licenses>
+         <downloadUrls>
+            <string>https://repo.maven.apache.org/maven2/io/smallrye/smallrye-context-propagation/1.2.2/smallrye-context-propagation-1.2.2.jar</string>
+         </downloadUrls>
+      </dependency>
+      <dependency>
+         <name>smallrye-context-propagation-api</name>
+         <groupId>io.smallrye</groupId>
+         <artifactId>smallrye-context-propagation-api</artifactId>
+         <version>1.2.2</version>
+         <projectUrl>https://github.com/smallrye/smallrye-context-propagation/smallrye-context-propagation-api</projectUrl>
+         <type>jar</type>
+         <licenses>
+            <license>
+               <name>The Apache Software License, Version 2.0</name>
+               <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            </license>
+         </licenses>
+         <downloadUrls>
+            <string>https://repo.maven.apache.org/maven2/io/smallrye/smallrye-context-propagation-api/1.2.2/smallrye-context-propagation-api-1.2.2.jar</string>
+         </downloadUrls>
+      </dependency>
+      <dependency>
+         <name>smallrye-context-propagation-storage</name>
+         <groupId>io.smallrye</groupId>
+         <artifactId>smallrye-context-propagation-storage</artifactId>
+         <version>1.2.2</version>
+         <projectUrl>https://github.com/smallrye/smallrye-context-propagation/smallrye-context-propagation-storage</projectUrl>
+         <type>jar</type>
+         <licenses>
+            <license>
+               <name>The Apache Software License, Version 2.0</name>
+               <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            </license>
+         </licenses>
+         <downloadUrls>
+            <string>https://repo.maven.apache.org/maven2/io/smallrye/smallrye-context-propagation-storage/1.2.2/smallrye-context-propagation-storage-1.2.2.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
@@ -1536,7 +1711,7 @@
          <name>Vert.x Bridge Common</name>
          <groupId>io.vertx</groupId>
          <artifactId>vertx-bridge-common</artifactId>
-         <version>4.2.4</version>
+         <version>4.2.7</version>
          <projectUrl>http://nexus.sonatype.org/oss-repository-hosting.html/vertx-parent/vertx-ext/vertx-ext-parent/vertx-bridge-common</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1550,14 +1725,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/vertx/vertx-bridge-common/4.2.4/vertx-bridge-common-4.2.4.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/vertx/vertx-bridge-common/4.2.7/vertx-bridge-common-4.2.7.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Vert.x Core</name>
          <groupId>io.vertx</groupId>
          <artifactId>vertx-core</artifactId>
-         <version>4.2.4</version>
+         <version>4.2.7</version>
          <projectUrl>http://nexus.sonatype.org/oss-repository-hosting.html/vertx-parent/vertx-core</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1571,14 +1746,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/vertx/vertx-core/4.2.4/vertx-core-4.2.4.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/vertx/vertx-core/4.2.7/vertx-core-4.2.7.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>vertx-auth-common</name>
          <groupId>io.vertx</groupId>
          <artifactId>vertx-auth-common</artifactId>
-         <version>4.2.4</version>
+         <version>4.2.7</version>
          <projectUrl>http://nexus.sonatype.org/oss-repository-hosting.html/vertx-parent/vertx-ext/vertx-ext-parent/vertx-auth/vertx-auth-common</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1592,14 +1767,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/vertx/vertx-auth-common/4.2.4/vertx-auth-common-4.2.4.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/vertx/vertx-auth-common/4.2.7/vertx-auth-common-4.2.7.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>vertx-codegen</name>
          <groupId>io.vertx</groupId>
          <artifactId>vertx-codegen</artifactId>
-         <version>4.2.4</version>
+         <version>4.2.7</version>
          <projectUrl>http://nexus.sonatype.org/oss-repository-hosting.html/vertx-parent/vertx-codegen</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1613,14 +1788,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/vertx/vertx-codegen/4.2.4/vertx-codegen-4.2.4.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/vertx/vertx-codegen/4.2.7/vertx-codegen-4.2.7.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>vertx-web</name>
          <groupId>io.vertx</groupId>
          <artifactId>vertx-web</artifactId>
-         <version>4.2.4</version>
+         <version>4.2.7</version>
          <projectUrl>http://nexus.sonatype.org/oss-repository-hosting.html/vertx-parent/vertx-ext/vertx-ext-parent/vertx-web-parent/vertx-web</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1634,14 +1809,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/vertx/vertx-web/4.2.4/vertx-web-4.2.4.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/vertx/vertx-web/4.2.7/vertx-web-4.2.7.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>vertx-web-common</name>
          <groupId>io.vertx</groupId>
          <artifactId>vertx-web-common</artifactId>
-         <version>4.2.4</version>
+         <version>4.2.7</version>
          <projectUrl>http://nexus.sonatype.org/oss-repository-hosting.html/vertx-parent/vertx-ext/vertx-ext-parent/vertx-web-parent/vertx-web-common</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1655,7 +1830,7 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/vertx/vertx-web-common/4.2.4/vertx-web-common-4.2.4.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/vertx/vertx-web-common/4.2.7/vertx-web-common-4.2.7.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>

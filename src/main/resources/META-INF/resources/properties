@@ -1,6 +1,6 @@
 #Properties
 compiler-plugin.version=3.8.1
-display.timestamp=20220702T200304Z
+display.timestamp=20220702T224648Z
 display.version=0.1-SNAPSHOT
 kotlin.version=1.7.0
 maven.build.timestamp.format=yyyyMMdd'T'HHmmss'Z'
@@ -12,7 +12,7 @@ project.reporting.outputEncoding=UTF-8
 quarkus-plugin.version=2.10.1.Final
 quarkus.container-image.additional-tags=dev,latest-snapshot
 quarkus.container-image.group=emteeware
-quarkus.container-image.tag=0.1-SNAPSHOT-20220702T200304Z
+quarkus.container-image.tag=0.1-SNAPSHOT-20220702T224648Z
 quarkus.platform.artifact-id=quarkus-universe-bom
 quarkus.platform.group-id=io.quarkus
 quarkus.platform.version=2.10.1.Final

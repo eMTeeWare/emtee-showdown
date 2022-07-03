@@ -23,7 +23,8 @@ class LegalResource {
         val propertyFile = this.javaClass.getResourceAsStream("/META-INF/resources/properties")!!
         val p = Properties()
         p.load(propertyFile)
-        val timestamp = p.getProperty("display.timestamp")
+        val trimmedisotimestamp = p.getProperty("display.timestamp")
+        val timestamp = "${trimmedisotimestamp.substring(0, 4)}-${trimmedisotimestamp.substring(4, 6)}-${trimmedisotimestamp.substring(6, 11)}:${trimmedisotimestamp.substring(11, 13)}:${trimmedisotimestamp.substring(13, 16)}"
         val version = p.getProperty("display.version")
 
         val xml = javaClass.classLoader.getResourceAsStream("/META-INF/resources/attribution.xml")!!

@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="/settings/dark-mode.css" />
     <script type="application/javascript" src="scripts.js"></script>
     <script src="settings/load-settings.js" defer></script>
+    <script type="application/javascript" defer>
+        window.addEventListener('DOMContentLoaded', function() {
+            document.getElementById("build-info").textContent = "This is eMTee Showdown, version {version}, built at " + new Date('{timestamp}').toLocaleString(navigator.language, { dateStyle: 'full', timeStyle: 'long' });});
+    </script>
     <link
         rel="icon"
         type="image/png"
@@ -19,9 +23,7 @@
 <div style="margin-bottom: 50px">
 eMTee Showdown is provided as open source software under the Apache 2.0 license. For more details, please visit the projects <a href="https://github.com/eMTeeWare/emtee-showdown" target="_blank">GitHub repository</a>.
 </div>
-<div style="margin-bottom: 50px">
-This is eMTee Showdown, version {version}, build at {timestamp}.
-</div>
+<div id="build-info" style="margin-bottom: 50px"></div>
 
 <div style="margin-bottom: 50px"><a href="index.html">Back to home.</a></div>
 

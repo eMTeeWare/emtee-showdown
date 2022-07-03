@@ -36,3 +36,4 @@ release.properties
 
 # Private Properties
 *.env
+/src/main/resources/META-INF/resources/properties

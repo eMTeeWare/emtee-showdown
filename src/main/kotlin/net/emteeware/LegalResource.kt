@@ -20,14 +20,14 @@ class LegalResource {
     @GET
     @Produces(MediaType.TEXT_HTML)
     fun legal(): TemplateInstance {
-        val propertyFile = this.javaClass.getResourceAsStream("/META-INF/resources/properties")!!
+        val propertyFile = this.javaClass.getResourceAsStream("/runtime-resources/properties")!!
         val p = Properties()
         p.load(propertyFile)
         val trimmedisotimestamp = p.getProperty("display.timestamp")
         val timestamp = "${trimmedisotimestamp.substring(0, 4)}-${trimmedisotimestamp.substring(4, 6)}-${trimmedisotimestamp.substring(6, 11)}:${trimmedisotimestamp.substring(11, 13)}:${trimmedisotimestamp.substring(13, 16)}"
         val version = p.getProperty("display.version")
 
-        val xml = javaClass.classLoader.getResourceAsStream("/META-INF/resources/attribution.xml")!!
+        val xml = javaClass.classLoader.getResourceAsStream("/runtime-resources/attribution.xml")!!
         val mapper = XmlMapper()
         val dependencyList : DependencyList = mapper.readValue(xml)
 

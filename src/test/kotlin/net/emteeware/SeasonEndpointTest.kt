@@ -32,11 +32,11 @@ class SeasonEndpointTest {
             .then()
             .statusCode(HttpStatus.SC_OK).extract().response()
         val htmlPath = XmlPath(XmlPath.CompatibilityMode.HTML, response.body.asString())
-        assertEquals(title, htmlPath.getString("html.body.div.p.find{ it.@id == 'title-$id' }"))
-        assertEquals(count, htmlPath.getString("html.body.div.p.find{ it.@id == 'count-$id' }"))
-        assertEquals(year, htmlPath.getString("html.body.div.p.find{ it.@id == 'year-$id' }"))
-        assertEquals(episodes, htmlPath.getString("html.body.div.p.find{ it.@id == 'episodes-$id' }"))
-        assertEquals(lastseen, htmlPath.getString("html.body.div.p.find{ it.@id == 'lastseen-$id' }"))
+        assertEquals(title, htmlPath.getString("html.body.div.div.p.find{ it.@id == 'title-$id' }"))
+        assertEquals(count, htmlPath.getString("html.body.div.div.p.find{ it.@id == 'count-$id' }"))
+        assertEquals(year, htmlPath.getString("html.body.div.div.p.find{ it.@id == 'year-$id' }"))
+        assertEquals(episodes, htmlPath.getString("html.body.div.div.p.find{ it.@id == 'episodes-$id' }"))
+        assertEquals(lastseen, htmlPath.getString("html.body.div.div.p.find{ it.@id == 'lastseen-$id' }"))
     }
 
 }

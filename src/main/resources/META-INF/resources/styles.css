@@ -112,12 +112,15 @@
 
 .search-wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
     gap: .25rem;
+    width: 350px;
 }
 
 .search {
     font-size: 1rem;
+    border-radius: 10px;
 }
 
 .hide {

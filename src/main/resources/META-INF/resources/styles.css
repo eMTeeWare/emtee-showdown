@@ -120,6 +120,10 @@
     font-size: 1rem;
 }
 
+.hide {
+    display: none;
+}
+
 p {
     margin: 2px;
 }

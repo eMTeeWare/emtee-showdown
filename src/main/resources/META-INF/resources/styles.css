@@ -106,6 +106,20 @@
     font-weight: bold;
 }
 
+.seasons {
+    margin-top: .5rem;
+}
+
+.search-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.search {
+    font-size: 1rem;
+}
+
 p {
     margin: 2px;
 }

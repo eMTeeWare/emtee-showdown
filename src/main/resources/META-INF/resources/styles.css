@@ -106,6 +106,27 @@
     font-weight: bold;
 }
 
+.seasons {
+    margin-top: .5rem;
+}
+
+.search-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .25rem;
+    width: 350px;
+}
+
+.search {
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+.hide {
+    display: none;
+}
+
 p {
     margin: 2px;
 }

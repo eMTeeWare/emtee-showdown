@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles.css"/>
     <link rel="stylesheet" href="/settings/dark-mode.css" />
     <script type="application/javascript" src="scripts.js"></script>
+    <script type="application/javascript" src="seasons.js" defer></script>
     <script src="settings/load-settings.js" defer></script>
     <link
         rel="icon"
@@ -15,7 +16,12 @@
     />
 </head>
 <body>
+<div class="search-wrapper">
+    <label for="search">Search Seasons:</label>
+    <input type="search" placeholder="Search" class="search" id="search"/>
+</div>
 
+<div class="seasons" id="seasons">
 {#each seasons}
 <div id="{it.id}" class="season {#if it.selected}selected{/if}" onclick="select(this.id)">
     <p id="title-{it.id}" class="title">{it.show}</p>
@@ -25,6 +31,7 @@
     <p id="lastseen-{it.id}"><!-- letzte Episode gesehen am: {it.lastSeen}--></p>
 </div>
 {/each}
+</div>
 
 
 </body>

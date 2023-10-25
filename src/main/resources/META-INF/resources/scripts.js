@@ -28,13 +28,3 @@ function select(id) {
         xhr.send(data);
     }
 }
-
-function flip(id, selected) {
-    const classList = document.getElementById(id).classList;
-    classList.add('is-flipped');
-    if(selected) {
-        classList.add('selected');
-    } else {
-        classList.add('discarded');
-    }
-}

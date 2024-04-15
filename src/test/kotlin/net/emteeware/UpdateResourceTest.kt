@@ -40,6 +40,8 @@ internal class UpdateResourceTest {
         traktListEntry.show = TraktListEntry.Show()
         traktListEntry.show.title = "The Testers"
         traktListEntry.show.year = 2019
+        traktListEntry.show.ids = TraktListEntry.Ids()
+        traktListEntry.show.ids.trakt = 4711
     }
 
     @Test
@@ -56,7 +58,10 @@ internal class UpdateResourceTest {
         },
         "show": {
             "year": 2019,
-            "title": "The Testers"
+            "title": "The Testers",
+            "ids": {
+              "trakt": 4711
+            }
         }
     }
 ]"""

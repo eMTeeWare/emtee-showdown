@@ -20,6 +20,11 @@ class TraktListEntry {
     class Show {
         lateinit var title: String
         var year: Int = 0
+        lateinit var ids: Ids
+    }
+
+    class Ids {
+        var trakt: Int = 0
     }
 
     // Property names are defined by output of Trakt rest API

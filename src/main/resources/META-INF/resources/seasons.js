@@ -8,6 +8,8 @@ const seasonCards = document.getElementById("seasons")
 const updateCardHiddenState = () => {
     Object.values(seasonCards.children).forEach(seasonCard => {
         let isVisible = seasonCard.getElementsByClassName("title")[0].innerText.toLowerCase().includes(searchInput.value.toLowerCase())
+            | seasonCard.getElementsByClassName("info")[0].innerText.toLowerCase().includes(searchInput.value.toLowerCase())
+            | seasonCard.getElementsByClassName("summary")[0].innerText.toLowerCase().includes(searchInput.value.toLowerCase())
         if (hideSelectedCheckbox.checked === true && seasonCard.classList.contains("selected")) {
             isVisible = false
         }

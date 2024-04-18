@@ -23,11 +23,18 @@ internal class UpdateResourceTest {
     @RestClient
     lateinit var traktListService: TraktListService
 
+    @InjectMock
+    @RestClient
+    lateinit var traktShowService: TraktShowService
+
     @Inject
     lateinit var seasonChoice: SeasonChoice
 
     val traktListEntry = TraktListEntry()
     val traktEntries by lazy { arrayListOf(traktListEntry) }
+
+    val traktShow = TraktShow()
+    val traktShows by lazy { arrayListOf(traktShow) }
 
     @BeforeAll
     fun setup() {
@@ -42,32 +49,40 @@ internal class UpdateResourceTest {
         traktListEntry.show.year = 2019
         traktListEntry.show.ids = TraktListEntry.Ids()
         traktListEntry.show.ids.trakt = 4711
+
+        traktShow.title = "Die Tester"
+        traktShow.overview = "Fry und Bender testen neue Möglichkeiten Geld zu verdienen"
+        traktShow.language = "de"
+        traktShow.country = "de"
     }
 
     @Test
     fun update() {
         val expectedJson =
-            """[
-    {
-        "id": 42,
-        "rank": 9,
-        "season": {
-            "episode_count": 14,
-            "first_aired": "2021-04-03T00:00:00Z[UTC]",
-            "number": 3
-        },
-        "show": {
-            "year": 2019,
-            "title": "The Testers",
-            "ids": {
-              "trakt": 4711
+            """{
+    "legacySeasonList": [
+        {
+            "id": "42",
+            "lastSeen": "-999999999-01-01",
+            "localizedTitle": "Die Tester",
+            "number": 3,
+            "numberOfEpisodes": 14,
+            "selected": false,
+            "show": "The Testers",
+            "summary": "Fry und Bender testen neue Möglichkeiten Geld zu verdienen",
+            "totalSeasons": 0,
+            "yearOfFirstAiring": {
+                "leap": false,
+                "value": 2021
             }
         }
-    }
-]"""
+    ]
+}"""
         every { traktListService.update( any(), any(), any(), any(), any() ) } returns traktEntries
+        every { traktShowService.getTranslation( any(), any(), any(), any() ) } returns traktShows
         val response = given().log().all().get("/update")
         response.then().assertThat().statusCode(200)
+        println(response.body.asString())
         JSONAssert.assertEquals(expectedJson, response.body.asString(), false)
 
     }

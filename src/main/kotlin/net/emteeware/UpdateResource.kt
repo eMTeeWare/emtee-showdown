@@ -28,6 +28,10 @@ class UpdateResource {
     @field: RestClient
     internal lateinit var traktListService: TraktListService
 
+    @Inject
+    @field: RestClient
+    internal lateinit var traktShowService: TraktShowService
+
     @ConfigProperty(name = "trakt.api-key")
     lateinit var apiKey : String
     @ConfigProperty(name = "trakt.bearer-token")
@@ -39,14 +43,19 @@ class UpdateResource {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    fun update(): ArrayList<TraktListEntry> {
+    fun update(): SeasonChoice {
         logger.info("update from Trakt requested")
         val updatedSeasons = traktListService.update("full", apiKey, authToken, userName, listName)
         seasonChoice.legacySeasonList.clear()
         updatedSeasons.forEach { u ->
+            logger.info("translations for ${u.show.title} from Trakt requested")
+            val show = traktShowService.getTranslation(apiKey, authToken, u.show.ids.trakt, "de")[0]
+            logger.info("received translations")
             seasonChoice.legacySeasonList.add(
                 LegacySeason(
                     u.show.title,
+                    show.title?:u.show.title,
+                    show.overview?:"No summary found",
                     u.season.number,
                     0,
                     Year.of(SimpleDateFormat("yyyy").format(u.season.first_aired).toInt()),
@@ -56,6 +65,6 @@ class UpdateResource {
                 )
             )
         }
-        return updatedSeasons
+        return seasonChoice
     }
 }

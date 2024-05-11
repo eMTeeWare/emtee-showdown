@@ -30,16 +30,15 @@
             </div>
             <div class="card__face card__face--back">
                 <div class="card__face--back-text">
-                    <b>{it.show}</b>
-                    (Staffel {it.number}<!-- von {it.totalSeasons}-->)<br /><br />Erstausstrahlung: {it.yearOfFirstAiring}<br /> {it.numberOfEpisodes} Episoden<br />
-                    <!-- letzte Episode gesehen am: {it.lastSeen}-->
+                    <p>{#if it.show == it.localizedTitle}<b>{it.show}</b>{#else}<b>{it.localizedTitle}</b> ({it.show}){/if}</p>
+                    <p>Staffel {it.number}<!-- von {it.totalSeasons}-->, {it.numberOfEpisodes} Episoden, {it.yearOfFirstAiring}</p>
+                    <p><!-- letzte Episode gesehen am: {it.lastSeen}--></p>
+                    <p id="summary-{it.id}" class="summary">{it.summary}</p>
                 </div>
             </div>
         </div>
     </div>
     {/each}
 </div>
-
-
 </body>
 </html>

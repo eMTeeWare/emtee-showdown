@@ -30,14 +30,14 @@ class SelectionResourceTest {
     @Test
     fun `verify that no seasons are selected by default`() {
         val html = getHtml()
-        assertEquals("", html.getString("html.body"))
+        assertEquals("", html.getString("html.body.div.find{ it.@id == 'selections'}"))
     }
 
     @Test
     fun `verify that season appears in selection when it is selected`() {
         postSeason("100", "user1")
         val html = getHtml()
-        assertEquals("ALF", html.getString("html.body.div.div.div[1].div.b"))
+        assertEquals("ALF", html.getString("html.body.div.find{ it.@id == 'selections'}.div.div.div[1].div.p.b"))
     }
 
     @Test
@@ -45,7 +45,7 @@ class SelectionResourceTest {
         postSeason("100", "user1")
         deleteSeason("100", "user1")
         val html = getHtml()
-        assertEquals("", html.getString("html.body"))
+        assertEquals("", html.getString("html.body.div.find{ it.@id == 'selections'}"))
     }
 
     @Test
@@ -53,8 +53,8 @@ class SelectionResourceTest {
         postSeason("100", "user1")
         postSeason("100", "user2")
         val html = getHtml()
-        assertEquals("ALF", html.getString("html.body.div[0].div.div[1].div.b"))
-        assertEquals("ALF", html.getString("html.body.div[1].div.div[1].div.b"))
+        assertEquals("ALF", html.getString("html.body.div.find{ it.@id == 'selections'}.div[0].div.div[1].div.p.b"))
+        assertEquals("ALF", html.getString("html.body.div.find{ it.@id == 'selections'}.div[1].div.div[1].div.p.b"))
     }
 
     @Test
@@ -63,10 +63,10 @@ class SelectionResourceTest {
         postSeason("200", "user2")
         postSeason("200", "user1")
         var html = getHtml()
-        assertEquals(3, html.getNodeChildren("html.body.div").size())
+        assertEquals(3, html.getNodeChildren("html.body.div.find{ it.@id == 'selections'}.div").size())
         deleteSeason("*", "user3")
         html = getHtml()
-        assertEquals("", html.getString("html.body"))
+        assertEquals("", html.getString("html.body.div.find{ it.@id == 'selections'}"))
     }
 
     private fun getHtml(): XmlPath {

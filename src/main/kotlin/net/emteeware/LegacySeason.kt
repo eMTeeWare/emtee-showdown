@@ -7,6 +7,8 @@ import java.time.Year
 @TemplateData
 data class LegacySeason(
     val show: String,
+    val localizedTitle: String,
+    val summary: String,
     val number: Int,
     val totalSeasons: Int,
     val yearOfFirstAiring: Year,

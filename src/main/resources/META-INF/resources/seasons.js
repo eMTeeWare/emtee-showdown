@@ -46,14 +46,16 @@ const select = id => {
 
 const summaries = document.getElementsByClassName("summary")
 Array.from(summaries).forEach(summary => {
-    summary.style.height = 100 - summary.parentElement.children[0].scrollHeight - summary.parentElement.children[1].scrollHeight - summary.parentElement.children[2].scrollHeight - 14 + "px"
+    const seasonBoxHeight = 100
+    const paddingHeight = 14
+    summary.style.height = seasonBoxHeight - summary.parentElement.children[0].scrollHeight - summary.parentElement.children[1].scrollHeight - summary.parentElement.children[2].scrollHeight - paddingHeight + "px"
 
     summary.addEventListener("mouseover", () => {
         summary.style.height = summary.scrollHeight + "px"
     })
 
     summary.addEventListener("mouseout", () => {
-        summary.style.height = 100 - summary.parentElement.children[0].scrollHeight - summary.parentElement.children[1].scrollHeight - summary.parentElement.children[2].scrollHeight - 14 + "px"
+        summary.style.height = seasonBoxHeight - summary.parentElement.children[0].scrollHeight - summary.parentElement.children[1].scrollHeight - summary.parentElement.children[2].scrollHeight - paddingHeight + "px"
     })
 })
 

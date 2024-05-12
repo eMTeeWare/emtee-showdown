@@ -127,6 +127,14 @@
     background: white;
 }
 
+.flip-random-button-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 0.2rem;
+    background: white;
+}
+
 .search {
     font-size: 1rem;
     border-radius: 10px;

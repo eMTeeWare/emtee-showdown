@@ -121,6 +121,10 @@
     flex-direction: row;
     align-items: center;
     gap: .25rem;
+    position: sticky;
+    top: 0;
+    padding: 0.2rem;
+    background: white;
 }
 
 .search {

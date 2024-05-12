@@ -10,3 +10,7 @@
 .dark-mode a:visited {
     color: #be8bb0;
 }
+
+.dark-mode .search-wrapper {
+    background: #181818;
+}

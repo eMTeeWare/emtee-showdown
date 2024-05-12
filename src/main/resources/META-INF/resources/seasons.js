@@ -42,6 +42,7 @@ const select = id => {
             }
         }).then(response => console.log(response))
     }
+    updateCardHiddenState()
 }
 
 const summaries = document.getElementsByClassName("summary")

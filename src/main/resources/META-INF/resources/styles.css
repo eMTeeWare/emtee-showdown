@@ -121,6 +121,18 @@
     flex-direction: row;
     align-items: center;
     gap: .25rem;
+    position: sticky;
+    top: 0;
+    padding: 0.2rem;
+    background: white;
+}
+
+.flip-random-button-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 0.2rem;
+    background: white;
 }
 
 .search {

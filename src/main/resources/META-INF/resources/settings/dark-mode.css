@@ -10,3 +10,11 @@
 .dark-mode a:visited {
     color: #be8bb0;
 }
+
+.dark-mode .search-wrapper {
+    background: #181818;
+}
+
+.dark-mode .flip-random-button-wrapper {
+    background: #181818;
+}

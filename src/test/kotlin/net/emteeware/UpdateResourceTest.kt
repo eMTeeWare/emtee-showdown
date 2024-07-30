@@ -13,7 +13,7 @@ import org.skyscreamer.jsonassert.JSONAssert
 
 import java.time.Instant
 import java.util.*
-import javax.inject.Inject
+import jakarta.inject.Inject
 
 @QuarkusTest
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)

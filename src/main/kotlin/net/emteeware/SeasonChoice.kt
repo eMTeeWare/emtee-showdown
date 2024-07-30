@@ -2,7 +2,7 @@ package net.emteeware
 
 import java.time.LocalDate
 import java.time.Year
-import javax.inject.Singleton
+import jakarta.inject.Singleton
 
 @Singleton
 class SeasonChoice {

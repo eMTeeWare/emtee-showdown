@@ -1,6 +1,23 @@
 <attributionReport>
    <dependencies>
       <dependency>
+         <name>Ancillary classes for making third party frameworks to run on top of Vert.x</name>
+         <groupId>io.quarkus.vertx.utils</groupId>
+         <artifactId>quarkus-vertx-utils</artifactId>
+         <version>3.12.3</version>
+         <projectUrl>https://quarkus.io</projectUrl>
+         <type>jar</type>
+         <licenses>
+            <license>
+               <name>Apache License, Version 2.0</name>
+               <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            </license>
+         </licenses>
+         <downloadUrls>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/vertx/utils/quarkus-vertx-utils/3.12.3/quarkus-vertx-utils-3.12.3.jar</string>
+         </downloadUrls>
+      </dependency>
+      <dependency>
          <name>Angus Activation Registries</name>
          <groupId>org.eclipse.angus</groupId>
          <artifactId>angus-activation</artifactId>
@@ -72,7 +89,7 @@
          <name>ArC - Runtime</name>
          <groupId>io.quarkus.arc</groupId>
          <artifactId>arc</artifactId>
-         <version>3.10.1</version>
+         <version>3.12.3</version>
          <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
@@ -82,7 +99,7 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/arc/arc/3.10.1/arc-3.10.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/arc/arc/3.12.3/arc-3.12.3.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
@@ -117,23 +134,6 @@
          </licenses>
          <downloadUrls>
             <string>https://repo.maven.apache.org/maven2/com/aayushatharva/brotli4j/brotli4j/1.16.0/brotli4j-1.16.0.jar</string>
-         </downloadUrls>
-      </dependency>
-      <dependency>
-         <name>Byte Buddy (without dependencies)</name>
-         <groupId>net.bytebuddy</groupId>
-         <artifactId>byte-buddy</artifactId>
-         <version>1.14.11</version>
-         <projectUrl>https://bytebuddy.net/byte-buddy</projectUrl>
-         <type>jar</type>
-         <licenses>
-            <license>
-               <name>Apache License, Version 2.0</name>
-               <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
-            </license>
-         </licenses>
-         <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.14.11/byte-buddy-1.14.11.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
@@ -178,7 +178,7 @@
          <name>Jackson-annotations</name>
          <groupId>com.fasterxml.jackson.core</groupId>
          <artifactId>jackson-annotations</artifactId>
-         <version>2.17.0</version>
+         <version>2.17.2</version>
          <projectUrl>https://github.com/FasterXML/jackson</projectUrl>
          <type>jar</type>
          <licenses>
@@ -188,14 +188,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.17.0/jackson-annotations-2.17.0.jar</string>
+            <string>https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.17.2/jackson-annotations-2.17.2.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Jackson-core</name>
          <groupId>com.fasterxml.jackson.core</groupId>
          <artifactId>jackson-core</artifactId>
-         <version>2.17.0</version>
+         <version>2.17.2</version>
          <projectUrl>https://github.com/FasterXML/jackson-core</projectUrl>
          <type>jar</type>
          <licenses>
@@ -205,14 +205,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.17.0/jackson-core-2.17.0.jar</string>
+            <string>https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.17.2/jackson-core-2.17.2.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>jackson-databind</name>
          <groupId>com.fasterxml.jackson.core</groupId>
          <artifactId>jackson-databind</artifactId>
-         <version>2.17.0</version>
+         <version>2.17.2</version>
          <projectUrl>https://github.com/FasterXML/jackson</projectUrl>
          <type>jar</type>
          <licenses>
@@ -222,14 +222,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.17.0/jackson-databind-2.17.0.jar</string>
+            <string>https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.17.2/jackson-databind-2.17.2.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Jackson-dataformat-XML</name>
          <groupId>com.fasterxml.jackson.dataformat</groupId>
          <artifactId>jackson-dataformat-xml</artifactId>
-         <version>2.17.1</version>
+         <version>2.17.2</version>
          <projectUrl>https://github.com/FasterXML/jackson-dataformat-xml</projectUrl>
          <type>jar</type>
          <licenses>
@@ -239,14 +239,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.17.1/jackson-dataformat-xml-2.17.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.17.2/jackson-dataformat-xml-2.17.2.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>jackson-module-kotlin</name>
          <groupId>com.fasterxml.jackson.module</groupId>
          <artifactId>jackson-module-kotlin</artifactId>
-         <version>2.17.1</version>
+         <version>2.17.2</version>
          <projectUrl>https://github.com/FasterXML/jackson-module-kotlin</projectUrl>
          <type>jar</type>
          <licenses>
@@ -256,7 +256,7 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-kotlin/2.17.1/jackson-module-kotlin-2.17.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-kotlin/2.17.2/jackson-module-kotlin-2.17.2.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
@@ -314,8 +314,8 @@
          <name>Jakarta Interceptors</name>
          <groupId>jakarta.interceptor</groupId>
          <artifactId>jakarta.interceptor-api</artifactId>
-         <version>2.1.0</version>
-         <projectUrl>https://github.com/eclipse-ee4j/interceptor-api</projectUrl>
+         <version>2.2.0</version>
+         <projectUrl>https://github.com/jakartaee/interceptors</projectUrl>
          <type>jar</type>
          <licenses>
             <license>
@@ -328,7 +328,7 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/jakarta/interceptor/jakarta.interceptor-api/2.1.0/jakarta.interceptor-api-2.1.0.jar</string>
+            <string>https://repo.maven.apache.org/maven2/jakarta/interceptor/jakarta.interceptor-api/2.2.0/jakarta.interceptor-api-2.2.0.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
@@ -450,6 +450,24 @@
          </downloadUrls>
       </dependency>
       <dependency>
+         <name>JBoss Logging 3</name>
+         <groupId>org.jboss.logging</groupId>
+         <artifactId>jboss-logging</artifactId>
+         <version>3.6.0.Final</version>
+         <projectUrl>http://www.jboss.org</projectUrl>
+         <type>jar</type>
+         <licenses>
+            <license>
+               <name>Apache License 2.0</name>
+               <url>https://repository.jboss.org/licenses/apache-2.0.txt</url>
+            </license>
+         </licenses>
+         <downloadUrls>
+            <string>https://repository.jboss.org/nexus/content/groups/public//org/jboss/logging/jboss-logging/3.6.0.Final/jboss-logging-3.6.0.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.6.0.Final/jboss-logging-3.6.0.Final.jar</string>
+         </downloadUrls>
+      </dependency>
+      <dependency>
          <name>JetBrains Java Annotations</name>
          <groupId>org.jetbrains</groupId>
          <artifactId>annotations</artifactId>
@@ -470,8 +488,8 @@
          <name>JSON-B API</name>
          <groupId>jakarta.json.bind</groupId>
          <artifactId>jakarta.json.bind-api</artifactId>
-         <version>3.0.0</version>
-         <projectUrl>https://eclipse-ee4j.github.io/jsonb-api</projectUrl>
+         <version>3.0.1</version>
+         <projectUrl>https://jakartaee.github.io/jsonb-api</projectUrl>
          <type>jar</type>
          <licenses>
             <license>
@@ -484,14 +502,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/jakarta/json/bind/jakarta.json.bind-api/3.0.0/jakarta.json.bind-api-3.0.0.jar</string>
+            <string>https://repo.maven.apache.org/maven2/jakarta/json/bind/jakarta.json.bind-api/3.0.1/jakarta.json.bind-api-3.0.1.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Kotlin Reflect</name>
          <groupId>org.jetbrains.kotlin</groupId>
          <artifactId>kotlin-reflect</artifactId>
-         <version>1.9.23</version>
+         <version>2.0.0</version>
          <projectUrl>https://kotlinlang.org/</projectUrl>
          <type>jar</type>
          <licenses>
@@ -501,7 +519,7 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-reflect/1.9.23/kotlin-reflect-1.9.23.jar</string>
+            <string>https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-reflect/2.0.0/kotlin-reflect-2.0.0.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
@@ -576,7 +594,7 @@
          <name>kotlinx-coroutines-core</name>
          <groupId>org.jetbrains.kotlinx</groupId>
          <artifactId>kotlinx-coroutines-core</artifactId>
-         <version>1.8.0</version>
+         <version>1.8.1</version>
          <projectUrl>https://github.com/Kotlin/kotlinx.coroutines</projectUrl>
          <type>jar</type>
          <licenses>
@@ -586,14 +604,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core/1.8.0/kotlinx-coroutines-core-1.8.0.jar</string>
+            <string>https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core/1.8.1/kotlinx-coroutines-core-1.8.1.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>kotlinx-coroutines-core</name>
          <groupId>org.jetbrains.kotlinx</groupId>
          <artifactId>kotlinx-coroutines-core-jvm</artifactId>
-         <version>1.8.0</version>
+         <version>1.8.1</version>
          <projectUrl>https://github.com/Kotlin/kotlinx.coroutines</projectUrl>
          <type>jar</type>
          <licenses>
@@ -603,14 +621,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.8.0/kotlinx-coroutines-core-jvm-1.8.0.jar</string>
+            <string>https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.8.1/kotlinx-coroutines-core-jvm-1.8.1.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>kotlinx-coroutines-jdk8</name>
          <groupId>org.jetbrains.kotlinx</groupId>
          <artifactId>kotlinx-coroutines-jdk8</artifactId>
-         <version>1.8.0</version>
+         <version>1.8.1</version>
          <projectUrl>https://github.com/Kotlin/kotlinx.coroutines</projectUrl>
          <type>jar</type>
          <licenses>
@@ -620,14 +638,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-jdk8/1.8.0/kotlinx-coroutines-jdk8-1.8.0.jar</string>
+            <string>https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-jdk8/1.8.1/kotlinx-coroutines-jdk8-1.8.1.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>MicroProfile Config API</name>
          <groupId>org.eclipse.microprofile.config</groupId>
          <artifactId>microprofile-config-api</artifactId>
-         <version>3.0.3</version>
+         <version>3.1</version>
          <projectUrl>https://microprofile.io/project/eclipse/microprofile-config/microprofile-config-api</projectUrl>
          <type>jar</type>
          <licenses>
@@ -637,7 +655,7 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/org/eclipse/microprofile/config/microprofile-config-api/3.0.3/microprofile-config-api-3.0.3.jar</string>
+            <string>https://repo.maven.apache.org/maven2/org/eclipse/microprofile/config/microprofile-config-api/3.1/microprofile-config-api-3.1.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
@@ -950,7 +968,7 @@
          <name>Quarkus - Apache HttpClient - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-apache-httpclient</artifactId>
-         <version>3.10.1</version>
+         <version>3.12.3</version>
          <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
@@ -960,14 +978,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-apache-httpclient/3.10.1/quarkus-apache-httpclient-3.10.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-apache-httpclient/3.12.3/quarkus-apache-httpclient-3.12.3.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - ArC - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-arc</artifactId>
-         <version>3.10.1</version>
+         <version>3.12.3</version>
          <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
@@ -977,14 +995,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-arc/3.10.1/quarkus-arc-3.10.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-arc/3.12.3/quarkus-arc-3.12.3.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - Container Image - Docker</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-container-image-docker</artifactId>
-         <version>3.10.1</version>
+         <version>3.12.3</version>
          <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
@@ -994,14 +1012,31 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-container-image-docker/3.10.1/quarkus-container-image-docker-3.10.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-container-image-docker/3.12.3/quarkus-container-image-docker-3.12.3.jar</string>
+         </downloadUrls>
+      </dependency>
+      <dependency>
+         <name>Quarkus - Container Image - Docker Common</name>
+         <groupId>io.quarkus</groupId>
+         <artifactId>quarkus-container-image-docker-common</artifactId>
+         <version>3.12.3</version>
+         <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
+         <type>jar</type>
+         <licenses>
+            <license>
+               <name>The Apache Software License, Version 2.0</name>
+               <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            </license>
+         </licenses>
+         <downloadUrls>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-container-image-docker-common/3.12.3/quarkus-container-image-docker-common-3.12.3.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - Container Image - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-container-image</artifactId>
-         <version>3.10.1</version>
+         <version>3.12.3</version>
          <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1011,14 +1046,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-container-image/3.10.1/quarkus-container-image-3.10.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-container-image/3.12.3/quarkus-container-image-3.12.3.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - Credentials - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-credentials</artifactId>
-         <version>3.10.1</version>
+         <version>3.12.3</version>
          <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1028,14 +1063,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-credentials/3.10.1/quarkus-credentials-3.10.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-credentials/3.12.3/quarkus-credentials-3.12.3.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - JSON-B - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-jsonb</artifactId>
-         <version>3.10.1</version>
+         <version>3.12.3</version>
          <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1045,14 +1080,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-jsonb/3.10.1/quarkus-jsonb-3.10.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-jsonb/3.12.3/quarkus-jsonb-3.12.3.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - JSON-P - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-jsonp</artifactId>
-         <version>3.10.1</version>
+         <version>3.12.3</version>
          <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1062,14 +1097,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-jsonp/3.10.1/quarkus-jsonp-3.10.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-jsonp/3.12.3/quarkus-jsonp-3.12.3.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - Kotlin - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-kotlin</artifactId>
-         <version>3.10.1</version>
+         <version>3.12.3</version>
          <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1079,14 +1114,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-kotlin/3.10.1/quarkus-kotlin-3.10.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-kotlin/3.12.3/quarkus-kotlin-3.12.3.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - Mutiny - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-mutiny</artifactId>
-         <version>3.10.1</version>
+         <version>3.12.3</version>
          <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1096,14 +1131,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-mutiny/3.10.1/quarkus-mutiny-3.10.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-mutiny/3.12.3/quarkus-mutiny-3.12.3.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - Netty - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-netty</artifactId>
-         <version>3.10.1</version>
+         <version>3.12.3</version>
          <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1113,14 +1148,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-netty/3.10.1/quarkus-netty-3.10.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-netty/3.12.3/quarkus-netty-3.12.3.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - Qute - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-qute</artifactId>
-         <version>3.10.1</version>
+         <version>3.12.3</version>
          <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1130,14 +1165,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-qute/3.10.1/quarkus-qute-3.10.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-qute/3.12.3/quarkus-qute-3.12.3.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - REST Clients Config - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-rest-client-config</artifactId>
-         <version>3.10.1</version>
+         <version>3.12.3</version>
          <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1147,14 +1182,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-rest-client-config/3.10.1/quarkus-rest-client-config-3.10.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-rest-client-config/3.12.3/quarkus-rest-client-config-3.12.3.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - RESTEasy Classic - Common - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-resteasy-common</artifactId>
-         <version>3.10.1</version>
+         <version>3.12.3</version>
          <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1164,14 +1199,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-resteasy-common/3.10.1/quarkus-resteasy-common-3.10.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-resteasy-common/3.12.3/quarkus-resteasy-common-3.12.3.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - RESTEasy Classic - JSON-B - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-resteasy-jsonb</artifactId>
-         <version>3.10.1</version>
+         <version>3.12.3</version>
          <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1181,14 +1216,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-resteasy-jsonb/3.10.1/quarkus-resteasy-jsonb-3.10.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-resteasy-jsonb/3.12.3/quarkus-resteasy-jsonb-3.12.3.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - RESTEasy Classic - Qute - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-resteasy-qute</artifactId>
-         <version>3.10.1</version>
+         <version>3.12.3</version>
          <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1198,14 +1233,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-resteasy-qute/3.10.1/quarkus-resteasy-qute-3.10.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-resteasy-qute/3.12.3/quarkus-resteasy-qute-3.12.3.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - RESTEasy Classic - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-resteasy</artifactId>
-         <version>3.10.1</version>
+         <version>3.12.3</version>
          <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1215,14 +1250,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-resteasy/3.10.1/quarkus-resteasy-3.10.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-resteasy/3.12.3/quarkus-resteasy-3.12.3.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - RESTEasy Classic - Server common - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-resteasy-server-common</artifactId>
-         <version>3.10.1</version>
+         <version>3.12.3</version>
          <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1232,14 +1267,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-resteasy-server-common/3.10.1/quarkus-resteasy-server-common-3.10.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-resteasy-server-common/3.12.3/quarkus-resteasy-server-common-3.12.3.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - RESTEasy Classic&apos;s REST Client - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-resteasy-client</artifactId>
-         <version>3.10.1</version>
+         <version>3.12.3</version>
          <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1249,14 +1284,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-resteasy-client/3.10.1/quarkus-resteasy-client-3.10.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-resteasy-client/3.12.3/quarkus-resteasy-client-3.12.3.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - Security - Runtime SPI</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-security-runtime-spi</artifactId>
-         <version>3.10.1</version>
+         <version>3.12.3</version>
          <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1266,14 +1301,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-security-runtime-spi/3.10.1/quarkus-security-runtime-spi-3.10.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-security-runtime-spi/3.12.3/quarkus-security-runtime-spi-3.12.3.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - SmallRye Context Propagation - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-smallrye-context-propagation</artifactId>
-         <version>3.10.1</version>
+         <version>3.12.3</version>
          <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1283,14 +1318,31 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-smallrye-context-propagation/3.10.1/quarkus-smallrye-context-propagation-3.10.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-smallrye-context-propagation/3.12.3/quarkus-smallrye-context-propagation-3.12.3.jar</string>
+         </downloadUrls>
+      </dependency>
+      <dependency>
+         <name>Quarkus - TLS Registry - Runtime</name>
+         <groupId>io.quarkus</groupId>
+         <artifactId>quarkus-tls-registry</artifactId>
+         <version>3.12.3</version>
+         <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
+         <type>jar</type>
+         <licenses>
+            <license>
+               <name>The Apache Software License, Version 2.0</name>
+               <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            </license>
+         </licenses>
+         <downloadUrls>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-tls-registry/3.12.3/quarkus-tls-registry-3.12.3.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - Vert.x - HTTP - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-vertx-http</artifactId>
-         <version>3.10.1</version>
+         <version>3.12.3</version>
          <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1300,14 +1352,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-vertx-http/3.10.1/quarkus-vertx-http-3.10.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-vertx-http/3.12.3/quarkus-vertx-http-3.12.3.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - Vert.x - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-vertx</artifactId>
-         <version>3.10.1</version>
+         <version>3.12.3</version>
          <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1317,14 +1369,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-vertx/3.10.1/quarkus-vertx-3.10.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-vertx/3.12.3/quarkus-vertx-3.12.3.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - Vert.x Late Bound MDC Provider</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-vertx-latebound-mdc-provider</artifactId>
-         <version>3.10.1</version>
+         <version>3.12.3</version>
          <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1334,14 +1386,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-vertx-latebound-mdc-provider/3.10.1/quarkus-vertx-latebound-mdc-provider-3.10.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-vertx-latebound-mdc-provider/3.12.3/quarkus-vertx-latebound-mdc-provider-3.12.3.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Quarkus - Virtual Threads - Runtime</name>
          <groupId>io.quarkus</groupId>
          <artifactId>quarkus-virtual-threads</artifactId>
-         <version>3.10.1</version>
+         <version>3.12.3</version>
          <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1351,15 +1403,15 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-virtual-threads/3.10.1/quarkus-virtual-threads-3.10.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/quarkus-virtual-threads/3.12.3/quarkus-virtual-threads-3.12.3.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>quarkus-security</name>
          <groupId>io.quarkus.security</groupId>
          <artifactId>quarkus-security</artifactId>
-         <version>2.0.3.Final</version>
-         <projectUrl>http://www.jboss.org/quarkus-security</projectUrl>
+         <version>2.1.0</version>
+         <projectUrl>http://www.jboss.org</projectUrl>
          <type>jar</type>
          <licenses>
             <license>
@@ -1368,14 +1420,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/security/quarkus-security/2.0.3.Final/quarkus-security-2.0.3.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/security/quarkus-security/2.1.0/quarkus-security-2.1.0.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>Qute - Core</name>
          <groupId>io.quarkus.qute</groupId>
          <artifactId>qute-core</artifactId>
-         <version>3.10.1</version>
+         <version>3.12.3</version>
          <projectUrl>https://github.com/quarkusio/quarkus</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1385,7 +1437,7 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/quarkus/qute/qute-core/3.10.1/qute-core-3.10.1.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/quarkus/qute/qute-core/3.12.3/qute-core-3.12.3.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
@@ -1409,7 +1461,7 @@
          <name>RESTEasy CDI integration module</name>
          <groupId>org.jboss.resteasy</groupId>
          <artifactId>resteasy-cdi</artifactId>
-         <version>6.2.7.Final</version>
+         <version>6.2.9.Final</version>
          <projectUrl>https://resteasy.dev</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1419,15 +1471,15 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repository.jboss.org/nexus/content/groups/public//org/jboss/resteasy/resteasy-cdi/6.2.7.Final/resteasy-cdi-6.2.7.Final.jar</string>
-            <string>https://repo.maven.apache.org/maven2/org/jboss/resteasy/resteasy-cdi/6.2.7.Final/resteasy-cdi-6.2.7.Final.jar</string>
+            <string>https://repository.jboss.org/nexus/content/groups/public//org/jboss/resteasy/resteasy-cdi/6.2.9.Final/resteasy-cdi-6.2.9.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/org/jboss/resteasy/resteasy-cdi/6.2.9.Final/resteasy-cdi-6.2.9.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>RESTEasy Client</name>
          <groupId>org.jboss.resteasy</groupId>
          <artifactId>resteasy-client</artifactId>
-         <version>6.2.7.Final</version>
+         <version>6.2.9.Final</version>
          <projectUrl>https://resteasy.dev</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1437,15 +1489,15 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repository.jboss.org/nexus/content/groups/public//org/jboss/resteasy/resteasy-client/6.2.7.Final/resteasy-client-6.2.7.Final.jar</string>
-            <string>https://repo.maven.apache.org/maven2/org/jboss/resteasy/resteasy-client/6.2.7.Final/resteasy-client-6.2.7.Final.jar</string>
+            <string>https://repository.jboss.org/nexus/content/groups/public//org/jboss/resteasy/resteasy-client/6.2.9.Final/resteasy-client-6.2.9.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/org/jboss/resteasy/resteasy-client/6.2.9.Final/resteasy-client-6.2.9.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>RESTEasy Client API</name>
          <groupId>org.jboss.resteasy</groupId>
          <artifactId>resteasy-client-api</artifactId>
-         <version>6.2.7.Final</version>
+         <version>6.2.9.Final</version>
          <projectUrl>https://resteasy.dev</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1455,15 +1507,15 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repository.jboss.org/nexus/content/groups/public//org/jboss/resteasy/resteasy-client-api/6.2.7.Final/resteasy-client-api-6.2.7.Final.jar</string>
-            <string>https://repo.maven.apache.org/maven2/org/jboss/resteasy/resteasy-client-api/6.2.7.Final/resteasy-client-api-6.2.7.Final.jar</string>
+            <string>https://repository.jboss.org/nexus/content/groups/public//org/jboss/resteasy/resteasy-client-api/6.2.9.Final/resteasy-client-api-6.2.9.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/org/jboss/resteasy/resteasy-client-api/6.2.9.Final/resteasy-client-api-6.2.9.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>RESTEasy Core</name>
          <groupId>org.jboss.resteasy</groupId>
          <artifactId>resteasy-core</artifactId>
-         <version>6.2.7.Final</version>
+         <version>6.2.9.Final</version>
          <projectUrl>https://resteasy.dev</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1473,15 +1525,15 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repository.jboss.org/nexus/content/groups/public//org/jboss/resteasy/resteasy-core/6.2.7.Final/resteasy-core-6.2.7.Final.jar</string>
-            <string>https://repo.maven.apache.org/maven2/org/jboss/resteasy/resteasy-core/6.2.7.Final/resteasy-core-6.2.7.Final.jar</string>
+            <string>https://repository.jboss.org/nexus/content/groups/public//org/jboss/resteasy/resteasy-core/6.2.9.Final/resteasy-core-6.2.9.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/org/jboss/resteasy/resteasy-core/6.2.9.Final/resteasy-core-6.2.9.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>RESTEasy Core SPI</name>
          <groupId>org.jboss.resteasy</groupId>
          <artifactId>resteasy-core-spi</artifactId>
-         <version>6.2.7.Final</version>
+         <version>6.2.9.Final</version>
          <projectUrl>https://resteasy.dev</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1491,15 +1543,15 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repository.jboss.org/nexus/content/groups/public//org/jboss/resteasy/resteasy-core-spi/6.2.7.Final/resteasy-core-spi-6.2.7.Final.jar</string>
-            <string>https://repo.maven.apache.org/maven2/org/jboss/resteasy/resteasy-core-spi/6.2.7.Final/resteasy-core-spi-6.2.7.Final.jar</string>
+            <string>https://repository.jboss.org/nexus/content/groups/public//org/jboss/resteasy/resteasy-core-spi/6.2.9.Final/resteasy-core-spi-6.2.9.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/org/jboss/resteasy/resteasy-core-spi/6.2.9.Final/resteasy-core-spi-6.2.9.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>RESTEasy JSON-Binding Provider</name>
          <groupId>org.jboss.resteasy</groupId>
          <artifactId>resteasy-json-binding-provider</artifactId>
-         <version>6.2.7.Final</version>
+         <version>6.2.9.Final</version>
          <projectUrl>https://resteasy.dev</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1509,15 +1561,15 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repository.jboss.org/nexus/content/groups/public//org/jboss/resteasy/resteasy-json-binding-provider/6.2.7.Final/resteasy-json-binding-provider-6.2.7.Final.jar</string>
-            <string>https://repo.maven.apache.org/maven2/org/jboss/resteasy/resteasy-json-binding-provider/6.2.7.Final/resteasy-json-binding-provider-6.2.7.Final.jar</string>
+            <string>https://repository.jboss.org/nexus/content/groups/public//org/jboss/resteasy/resteasy-json-binding-provider/6.2.9.Final/resteasy-json-binding-provider-6.2.9.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/org/jboss/resteasy/resteasy-json-binding-provider/6.2.9.Final/resteasy-json-binding-provider-6.2.9.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>RESTEasy JSON-P EE7 Provider</name>
          <groupId>org.jboss.resteasy</groupId>
          <artifactId>resteasy-json-p-provider</artifactId>
-         <version>6.2.7.Final</version>
+         <version>6.2.9.Final</version>
          <projectUrl>https://resteasy.dev</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1527,8 +1579,8 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repository.jboss.org/nexus/content/groups/public//org/jboss/resteasy/resteasy-json-p-provider/6.2.7.Final/resteasy-json-p-provider-6.2.7.Final.jar</string>
-            <string>https://repo.maven.apache.org/maven2/org/jboss/resteasy/resteasy-json-p-provider/6.2.7.Final/resteasy-json-p-provider-6.2.7.Final.jar</string>
+            <string>https://repository.jboss.org/nexus/content/groups/public//org/jboss/resteasy/resteasy-json-p-provider/6.2.9.Final/resteasy-json-p-provider-6.2.9.Final.jar</string>
+            <string>https://repo.maven.apache.org/maven2/org/jboss/resteasy/resteasy-json-p-provider/6.2.9.Final/resteasy-json-p-provider-6.2.9.Final.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
@@ -1657,7 +1709,7 @@
          <name>SmallRye Context Propagation: API</name>
          <groupId>io.smallrye</groupId>
          <artifactId>smallrye-context-propagation-api</artifactId>
-         <version>2.1.0</version>
+         <version>2.1.2</version>
          <projectUrl>https://github.com/smallrye/smallrye-context-propagation</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1667,14 +1719,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/smallrye/smallrye-context-propagation-api/2.1.0/smallrye-context-propagation-api-2.1.0.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/smallrye/smallrye-context-propagation-api/2.1.2/smallrye-context-propagation-api-2.1.2.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>SmallRye Context Propagation: Core</name>
          <groupId>io.smallrye</groupId>
          <artifactId>smallrye-context-propagation</artifactId>
-         <version>2.1.0</version>
+         <version>2.1.2</version>
          <projectUrl>https://github.com/smallrye/smallrye-context-propagation</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1684,14 +1736,14 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/smallrye/smallrye-context-propagation/2.1.0/smallrye-context-propagation-2.1.0.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/smallrye/smallrye-context-propagation/2.1.2/smallrye-context-propagation-2.1.2.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>
          <name>SmallRye Context Propagation: Storage</name>
          <groupId>io.smallrye</groupId>
          <artifactId>smallrye-context-propagation-storage</artifactId>
-         <version>2.1.0</version>
+         <version>2.1.2</version>
          <projectUrl>https://github.com/smallrye/smallrye-context-propagation</projectUrl>
          <type>jar</type>
          <licenses>
@@ -1701,7 +1753,7 @@
             </license>
          </licenses>
          <downloadUrls>
-            <string>https://repo.maven.apache.org/maven2/io/smallrye/smallrye-context-propagation-storage/2.1.0/smallrye-context-propagation-storage-2.1.0.jar</string>
+            <string>https://repo.maven.apache.org/maven2/io/smallrye/smallrye-context-propagation-storage/2.1.2/smallrye-context-propagation-storage-2.1.2.jar</string>
          </downloadUrls>
       </dependency>
       <dependency>

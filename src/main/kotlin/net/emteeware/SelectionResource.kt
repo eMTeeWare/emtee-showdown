@@ -2,7 +2,7 @@ package net.emteeware
 
 import io.quarkus.qute.Template
 import io.quarkus.qute.TemplateInstance
-import org.slf4j.LoggerFactory
+import io.quarkus.logging.Log
 import jakarta.inject.Inject
 import jakarta.ws.rs.Consumes
 import jakarta.ws.rs.DELETE
@@ -18,7 +18,6 @@ import jakarta.ws.rs.core.Response
 
 @Path("/selection")
 class SelectionResource {
-    private val logger = LoggerFactory.getLogger(javaClass)
 
     @Inject
     lateinit var selectedShows: Selection
@@ -35,7 +34,7 @@ class SelectionResource {
         @FormParam("id") id: String,
         @FormParam("user") user: String
     ): Response {
-        logger.info("Adding season $id for $user")
+        Log.info("Adding season $id for $user")
         selectedShows.addSeason(id, user)
         return Response.accepted().build()
     }
@@ -43,7 +42,7 @@ class SelectionResource {
     @DELETE
     @Consumes(APPLICATION_FORM_URLENCODED)
     fun deselect(@FormParam("id") id: String, @FormParam("user") user: String): Response {
-        logger.info("Deleting season $id for $user")
+        Log.info("Deleting season $id for $user")
         if (id == "*") {
             selectedShows.clear()
         } else {

@@ -1,12 +1,11 @@
 package net.emteeware
 
 
-import org.slf4j.LoggerFactory
+import io.quarkus.logging.Log
 import jakarta.enterprise.context.ApplicationScoped
 
 @ApplicationScoped
 class Selection {
-    private val logger = LoggerFactory.getLogger(javaClass)
     val selectedSeasons = HashMap<String, ArrayList<String>>()
 
     fun addSeason(id : String, user: String) {
@@ -18,7 +17,7 @@ class Selection {
                 selectedSeasons[user] = arrayListOf(id)
             }
         }
-        logger.info("Added season $id for $user")
+        Log.info("Added season $id for $user")
     }
 
     fun removeSeason(id: String, user: String) {
@@ -27,7 +26,7 @@ class Selection {
                 selectedSeasons[user]?.remove(id)
             }
         }
-        logger.info("Removed season $id for $user")
+        Log.info("Removed season $id for $user")
     }
 
     fun clear() {

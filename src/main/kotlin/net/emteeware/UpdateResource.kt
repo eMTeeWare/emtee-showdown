@@ -2,7 +2,7 @@ package net.emteeware
 
 import org.eclipse.microprofile.config.inject.ConfigProperty
 import org.eclipse.microprofile.rest.client.inject.RestClient
-import org.slf4j.LoggerFactory
+import io.quarkus.logging.Log
 import java.text.SimpleDateFormat
 import java.time.LocalDate
 import java.time.Year
@@ -19,7 +19,6 @@ import jakarta.ws.rs.core.MediaType
 
 @Path("/update")
 class UpdateResource {
-    private val logger = LoggerFactory.getLogger(javaClass)
 
     @Inject
     lateinit var seasonChoice: SeasonChoice
@@ -44,13 +43,13 @@ class UpdateResource {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     fun update(): SeasonChoice {
-        logger.info("update from Trakt requested")
+        Log.info("update from Trakt requested")
         val updatedSeasons = traktListService.update("full", apiKey, authToken, userName, listName)
         seasonChoice.legacySeasonList.clear()
         updatedSeasons.forEach { u ->
-            logger.info("translations for ${u.show.title} from Trakt requested")
+            Log.info("translations for ${u.show.title} from Trakt requested")
             val show = traktShowService.getTranslation(apiKey, authToken, u.show.ids.trakt, "de")[0]
-            logger.info("received translations")
+            Log.info("received translations")
             seasonChoice.legacySeasonList.add(
                 LegacySeason(
                     u.show.title,

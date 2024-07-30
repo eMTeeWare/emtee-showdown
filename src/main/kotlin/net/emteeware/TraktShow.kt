@@ -1,6 +1,6 @@
 package net.emteeware
 
-import javax.enterprise.context.ApplicationScoped
+import jakarta.enterprise.context.ApplicationScoped
 
 @ApplicationScoped
 class TraktShow {

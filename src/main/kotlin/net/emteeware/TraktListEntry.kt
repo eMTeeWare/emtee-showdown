@@ -1,7 +1,7 @@
 package net.emteeware
 
 import java.util.Date
-import javax.enterprise.context.ApplicationScoped
+import jakarta.enterprise.context.ApplicationScoped
 
 /**
  * Created by mteet on 25.04.2020.

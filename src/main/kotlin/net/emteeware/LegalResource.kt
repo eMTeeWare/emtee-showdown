@@ -5,11 +5,11 @@ import com.fasterxml.jackson.module.kotlin.readValue
 import io.quarkus.qute.Template
 import io.quarkus.qute.TemplateInstance
 import java.util.*
-import javax.inject.Inject
-import javax.ws.rs.GET
-import javax.ws.rs.Path
-import javax.ws.rs.Produces
-import javax.ws.rs.core.MediaType
+import jakarta.inject.Inject
+import jakarta.ws.rs.GET
+import jakarta.ws.rs.Path
+import jakarta.ws.rs.Produces
+import jakarta.ws.rs.core.MediaType
 
 @Path("/legal")
 class LegalResource {
@@ -20,7 +20,7 @@ class LegalResource {
     @GET
     @Produces(MediaType.TEXT_HTML)
     fun legal(): TemplateInstance {
-        val propertyFile = this.javaClass.getResourceAsStream("/runtime-resources/properties")!!
+        val propertyFile = this.javaClass.getResourceAsStream("/runtime-resources/project.properties")!!
         val p = Properties()
         p.load(propertyFile)
         val trimmedisotimestamp = p.getProperty("display.timestamp")

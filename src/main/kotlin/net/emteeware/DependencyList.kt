@@ -1,6 +1,6 @@
 package net.emteeware
 
-import javax.inject.Singleton
+import jakarta.inject.Singleton
 
 @Singleton
 class DependencyList {

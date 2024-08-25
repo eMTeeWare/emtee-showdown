@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>net.emteeware</groupId>
   <artifactId>emtee-showdown</artifactId>
-  <version>0.1-SNAPSHOT</version>
+  <version>0.1.0</version>
   <properties>
     <maven.build.timestamp.format>yyyyMMdd'T'HHmmss'Z'</maven.build.timestamp.format>
     <compiler-plugin.version>3.13.0</compiler-plugin.version>

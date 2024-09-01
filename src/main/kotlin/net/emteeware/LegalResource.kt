@@ -27,7 +27,7 @@ class LegalResource {
         val timestamp = "${trimmedisotimestamp.substring(0, 4)}-${trimmedisotimestamp.substring(4, 6)}-${trimmedisotimestamp.substring(6, 11)}:${trimmedisotimestamp.substring(11, 13)}:${trimmedisotimestamp.substring(13, 16)}"
         val version = p.getProperty("display.version")
 
-        val xml = javaClass.classLoader.getResourceAsStream("/runtime-resources/attribution.xml")!!
+        val xml = this.javaClass.getResourceAsStream("/runtime-resources/attribution.xml")!!
         val mapper = XmlMapper()
         val dependencyList : DependencyList = mapper.readValue(xml)
 

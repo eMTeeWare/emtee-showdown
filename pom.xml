@@ -24,6 +24,7 @@
     <surefire-plugin.version>3.3.1</surefire-plugin.version>
     <display.timestamp>${maven.build.timestamp}</display.timestamp>
     <display.version>${project.version}</display.version>
+    <quarkus.package.jar.type>uber-jar</quarkus.package.jar.type>
   </properties>
   <dependencyManagement>
     <dependencies>

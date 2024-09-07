@@ -15,11 +15,14 @@
     />
 </head>
 <body>
-<div class="flip-random-button-wrapper">
-    <button id="flip-selected-button">✔ Select random</button>
-    <button id="flip-discarded-button">✘ Discard random</button>
+<div class="top-of-page">
+    {#include navbar /}
+    <div class="flip-random-button-wrapper">
+        <button id="flip-selected-button">✔ Select random</button>
+        <button id="flip-discarded-button">✘ Discard random</button>
+    </div>
 </div>
-<div id="selections" style="margin-top: .5rem">
+<div class="selections" id="selections" style="margin-top: .5rem">
     {#each seasons}
     <div class="scene">
         <div id="{it.id}{it_count}" class="card">

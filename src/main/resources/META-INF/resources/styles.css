@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 .season {
     color: black;
     background-color: white;
@@ -11,6 +15,16 @@
     vertical-align: top;
     height: auto;
     min-height: 100px;
+}
+
+.selections {
+    margin: .5rem;
+}
+.top-of-page {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 .selected {
@@ -113,7 +127,7 @@
 }
 
 .seasons {
-    margin-top: .5rem;
+    margin: .5rem;
 }
 
 .search-wrapper {
@@ -123,15 +137,15 @@
     gap: .25rem;
     position: sticky;
     top: 0;
-    padding: 0.2rem;
+    padding: 0.5rem;
     background: white;
 }
 
 .flip-random-button-wrapper {
-    position: sticky;
+    /*position: sticky;
     top: 0;
-    z-index: 1;
-    padding: 0.2rem;
+    z-index: 1;*/
+    padding: 0.5rem;
     background: white;
 }
 

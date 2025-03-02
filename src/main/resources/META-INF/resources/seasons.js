@@ -1,5 +1,7 @@
 const user = Math.random().toString(36).slice(2, 7)
 
+const prefixForStorage = (div) => `season-${div.id}`;
+
 const searchInput = document.getElementById("search")
 const hideSelectedCheckbox = document.getElementById("hideSelectedCheckbox")
 const hideNotSelectedCheckbox = document.getElementById("hideNotSelectedCheckbox")
@@ -25,7 +27,7 @@ const select = id => {
     const data = `id=${element.id}&user=${user}`
     if (element.classList.contains("selected")) {
         element.classList.remove("selected")
-        sessionStorage.removeItem(`season-${element.id}`)
+        sessionStorage.removeItem(prefixForStorage(element))
         fetch("/selection", {
             method: "DELETE",
             body: data,
@@ -35,7 +37,7 @@ const select = id => {
         }).then(response => console.log(response))
     } else {
         element.classList.add("selected")
-        sessionStorage.setItem(`season-${element.id}`, "selected")
+        sessionStorage.setItem(prefixForStorage(element), "selected")
         fetch("/selection", {
             method: "POST",
             body: data,
@@ -45,15 +47,6 @@ const select = id => {
         }).then(response => console.log(response))
     }
     updateCardHiddenState()
-}
-
-function restoreSelectionState() {
-    document.querySelectorAll('.season').forEach(div => {
-        if (sessionStorage.getItem(`season-${div.id}`) === "selected") {
-            div.classList.add("selected")
-        }
-        updateCardHiddenState()
-    })
 }
 
 const summaries = document.getElementsByClassName("summary")
@@ -74,3 +67,10 @@ Array.from(summaries).forEach(summary => {
 searchInput.addEventListener("input", updateCardHiddenState)
 hideSelectedCheckbox.addEventListener("input", updateCardHiddenState)
 hideNotSelectedCheckbox.addEventListener("input",updateCardHiddenState)
+
+document.querySelectorAll('.season').forEach(div => {
+    if (sessionStorage.getItem(prefixForStorage(div)) === "selected") {
+        div.classList.add("selected")
+    }
+    updateCardHiddenState()
+})

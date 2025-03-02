@@ -3,6 +3,8 @@ package net.emteeware
 import org.eclipse.microprofile.config.inject.ConfigProperty
 import org.eclipse.microprofile.rest.client.inject.RestClient
 import io.quarkus.logging.Log
+import io.quarkus.qute.Template
+import io.quarkus.qute.TemplateInstance
 import java.text.SimpleDateFormat
 import java.time.LocalDate
 import java.time.Year
@@ -11,6 +13,7 @@ import jakarta.ws.rs.GET
 import jakarta.ws.rs.Path
 import jakarta.ws.rs.Produces
 import jakarta.ws.rs.core.MediaType
+import jakarta.ws.rs.core.MediaType.TEXT_HTML
 
 /**
  * Created by mteet on 25.04.2020.
@@ -31,6 +34,9 @@ class UpdateResource {
     @field: RestClient
     internal lateinit var traktShowService: TraktShowService
 
+    @Inject
+    lateinit var update: Template
+
     @ConfigProperty(name = "trakt.api-key")
     lateinit var apiKey : String
     @ConfigProperty(name = "trakt.bearer-token")
@@ -41,8 +47,8 @@ class UpdateResource {
     lateinit var listName : String
 
     @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    fun update(): SeasonChoice {
+    @Produces(TEXT_HTML)
+    fun update(): TemplateInstance {
         Log.info("update from Trakt requested")
         val updatedSeasons = traktListService.update("full", apiKey, authToken, userName, listName)
         seasonChoice.legacySeasonList.clear()
@@ -64,6 +70,6 @@ class UpdateResource {
                 )
             )
         }
-        return seasonChoice
+        return update.data("updateCount", updatedSeasons.count())
     }
 }

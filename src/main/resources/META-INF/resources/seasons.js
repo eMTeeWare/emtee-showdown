@@ -25,6 +25,7 @@ const select = id => {
     const data = `id=${element.id}&user=${user}`
     if (element.classList.contains("selected")) {
         element.classList.remove("selected")
+        sessionStorage.removeItem(`season-${element.id}`)
         fetch("/selection", {
             method: "DELETE",
             body: data,
@@ -34,6 +35,7 @@ const select = id => {
         }).then(response => console.log(response))
     } else {
         element.classList.add("selected")
+        sessionStorage.setItem(`season-${element.id}`, "selected")
         fetch("/selection", {
             method: "POST",
             body: data,
@@ -43,6 +45,15 @@ const select = id => {
         }).then(response => console.log(response))
     }
     updateCardHiddenState()
+}
+
+function restoreSelectionState() {
+    document.querySelectorAll('.season').forEach(div => {
+        if (sessionStorage.getItem(`season-${div.id}`) === "selected") {
+            div.classList.add("selected")
+        }
+        updateCardHiddenState()
+    })
 }
 
 const summaries = document.getElementsByClassName("summary")

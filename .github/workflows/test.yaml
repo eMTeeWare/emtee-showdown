@@ -24,4 +24,4 @@ jobs:
          sudo apt-get install -y maven
 
       - name: Tests
-        run: mvn test -f pom.xml
+        run: mvn test --no-transfer-progress -f pom.xml

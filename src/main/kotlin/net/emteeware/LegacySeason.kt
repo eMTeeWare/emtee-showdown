@@ -15,5 +15,6 @@ data class LegacySeason(
     val numberOfEpisodes: Int,
     val lastSeen: LocalDate,
     val id: String,
-    var selected: Boolean = false
+    var selected: Boolean = false,
+    var nominatingUser: String = ""
 )

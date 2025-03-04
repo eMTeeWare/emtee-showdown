@@ -1,6 +1,13 @@
 const darkmodeSystemInputElement = document.getElementById('darkmodeSystem');
 const darkmodeOnInputElement = document.getElementById('darkmodeOn');
 const darkmodeOffInputElement = document.getElementById('darkmodeOff');
+const userNameStorageKey = "emtee-user"
+const userNameElement = document.getElementById('userName');
+
+
+// Retrieve the value from localStorage
+const userNameValue = localStorage.getItem(userNameStorageKey);
+userNameElement.textContent = userNameValue ? userNameValue : 'Username not set yet.';
 
 /*function changeDarkMode() {
     const inputElement = document.getElementById("dark-mode-input-element");

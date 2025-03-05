@@ -55,8 +55,12 @@ class SelectionResource {
     @Produces(TEXT_HTML)
     fun getSelectedSeasons(): TemplateInstance {
         val theSelection = arrayListOf<LegacySeason>()
-        selectedShows.selectedSeasons.flatMap { p -> p.value }.forEach {
-            seasonChoice.getSeasonById(it)?.let { season -> theSelection.add(season) }
+        selectedShows.selectedSeasons.forEach { (user, seasonList) ->
+            seasonList.forEach innerFor@{
+                val currentSeason = seasonChoice.getSeasonById(it)?.copy() ?: return@innerFor
+                currentSeason.nominatingUser = user
+                theSelection.add(currentSeason)
+            }
         }
         return selection.data(
             "seasons",

@@ -1,4 +1,10 @@
-const user = Math.random().toString(36).slice(2, 7)
+const userNameStorageKey = "emtee-user"
+
+const user = localStorage.getItem(userNameStorageKey) != null ?
+    localStorage.getItem(userNameStorageKey) :
+    window.prompt("Wie heißt du?","dein Name");
+
+localStorage.setItem(userNameStorageKey, user)
 
 const prefixForStorage = (div) => `season-${div.id}`;
 

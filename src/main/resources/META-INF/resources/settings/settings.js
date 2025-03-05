@@ -6,8 +6,11 @@ const userNameElement = document.getElementById('userName');
 
 
 // Retrieve the value from localStorage
-const userNameValue = localStorage.getItem(userNameStorageKey);
-userNameElement.textContent = userNameValue ? userNameValue : 'Username not set yet.';
+
+function displayUserName() {
+    const userNameValue = localStorage.getItem(userNameStorageKey);
+    userNameElement.textContent = userNameValue ? userNameValue : 'Username not set yet.';
+}
 
 /*function changeDarkMode() {
     const inputElement = document.getElementById("dark-mode-input-element");
@@ -47,6 +50,14 @@ function load() {
         darkmodeOffInputElement.click();
     }
 }
+
+function changeUserName() {
+    let user = window.prompt("Wie heißt du?","dein Name");
+    localStorage.setItem(userNameStorageKey, user)
+    displayUserName()
+}
+
+displayUserName()
 
 window.addEventListener('storage', () => {
     load();
